@@ -8022,6 +8022,16 @@
 				"trans": "Token Natal"
 			}
 		},
+		"chromaScrambler": {
+			"description": {
+				"eng": "A randomizer cartridge salvaged from BioSyn's recalled ChromaSkin stock. Scrambles one piece of equipment into a random new look. Stats stay the same.",
+				"trans": "Kartrid pengacak yang diselamatkan dari stok ChromaSkin BioSyn yang ditarik kembali. Mengacak satu item perlengkapan menjadi tampilan baru secara acak. Statistik tetap sama."
+			},
+			"name": {
+				"eng": "Chroma Scrambler",
+				"trans": "Pengacak Chroma"
+			}
+		},
 		"clanMaintenanceResource": {
 			"description": {
 				"eng": "Use to contribute to gang maintenance",
@@ -9106,22 +9116,6 @@
 				"trans": "Reset otomatis"
 			}
 		},
-		"item": {
-			"title": {
-				"eng": "equipment",
-				"trans": "peralatan"
-			}
-		},
-		"itemDiff": {
-			"headerA": {
-				"eng": "Current",
-				"trans": "Saat ini"
-			},
-			"headerB": {
-				"eng": "Upgraded",
-				"trans": "Ditingkatkan"
-			}
-		},
 		"itemUpgradeTab": {
 			"tip": {
 				"noShards": {
@@ -9129,10 +9123,6 @@
 					"trans": "Silakan pilih jenis peningkatan di bawah ini"
 				}
 			}
-		},
-		"levelUpButton": {
-			"eng": "level up",
-			"trans": "Naik level"
 		},
 		"lowLevelUpgrade": {
 			"confirm": {
@@ -9180,18 +9170,6 @@
 			"title": {
 				"eng": "Select item to upgrade",
 				"trans": "Pilih item untuk ditingkatkan"
-			}
-		},
-		"selectItemModal": {
-			"title": {
-				"eng": "Select equipment",
-				"trans": "Pilih peralatan"
-			}
-		},
-		"shard": {
-			"title": {
-				"eng": "shard",
-				"trans": "pecahan"
 			}
 		},
 		"tabs": {
@@ -13028,6 +13006,78 @@
 				}
 			}
 		},
+		"inductionBypass": {
+			"core": {
+				"bearing": {
+					"eng": "Bearing",
+					"trans": "Arah"
+				},
+				"granted": {
+					"eng": "Access granted",
+					"trans": "Akses Diberikan"
+				},
+				"locked": {
+					"eng": "Locked",
+					"trans": "Terkunci"
+				},
+				"open": {
+					"eng": "Open",
+					"trans": "Buka"
+				},
+				"rejected": {
+					"eng": "Rejected",
+					"trans": "Ditolak"
+				},
+				"signal": {
+					"eng": "Sig ${signal}%",
+					"trans": "Sinyal ${signal}%"
+				},
+				"status": {
+					"eng": "Status",
+					"trans": "Status"
+				}
+			},
+			"header": {
+				"protocol": {
+					"eng": "Maglock Intrusion IB-3",
+					"trans": "Intrusi Maglock IB-3"
+				},
+				"title": {
+					"eng": "Induction Bypass",
+					"trans": "Pengelakan Induksi"
+				}
+			},
+			"instruction": {
+				"eng": "Drag the probe. Let go when the field turns green",
+				"trans": "Seret sonde. Lepaskan saat medan berubah hijau."
+			},
+			"status": {
+				"cold": {
+					"eng": "No field",
+					"trans": "Tidak ada bidang"
+				},
+				"hot": {
+					"eng": "Strong — not yet",
+					"trans": "Kuat — belum"
+				},
+				"layers": {
+					"eng": "Layers ${cracked}/${total}",
+					"trans": "Lapisan ${cracked}/${total}"
+				},
+				"spot": {
+					"eng": "Locked — let go",
+					"trans": "Terkunci — lepaskan"
+				},
+				"unlocked": {
+					"eng": "Access granted",
+					"trans": "Akses Diberikan"
+				},
+				"warm": {
+					"eng": "Weak field",
+					"trans": "Medan lemah"
+				}
+			}
+		},
 		"neonFuse": {
 			"hint": {
 				"eng": "Watch and remember the sequence...",
@@ -14413,6 +14463,10 @@
 				"eng": "Shop",
 				"trans": "Toko"
 			},
+			"transmog": {
+				"eng": "Transmog",
+				"trans": "Transmutasi"
+			},
 			"upgrade": {
 				"eng": "Upgrade",
 				"trans": "Peningkatan"
@@ -14640,6 +14694,262 @@
 			"npcName": {
 				"eng": "Spectre",
 				"trans": "Hantu"
+			}
+		},
+		"transmog": {
+			"bench": {
+				"after": {
+					"eng": "After",
+					"trans": "Setelah"
+				},
+				"applied": {
+					"eng": "Applied",
+					"sub": {
+						"eng": "Scramble again to reroll",
+						"trans": "Acak kembali untuk hasil baru"
+					},
+					"trans": "Diterapkan"
+				},
+				"before": {
+					"eng": "Before",
+					"trans": "Sebelum"
+				},
+				"chooseDonor": {
+					"eng": "Choose a donor",
+					"sub": {
+						"eng": "Any spare ${type}",
+						"trans": "Cadangan ${type} apa saja"
+					},
+					"trans": "Pilih Pendonor"
+				},
+				"chooseGear": {
+					"eng": "Choose gear",
+					"sub": {
+						"eng": "Tap the pad",
+						"trans": "Ketuk papan"
+					},
+					"trans": "Pilih Peralatan"
+				},
+				"confirm": {
+					"description": {
+						"eng": "${item} takes this donor's look and keeps its own stats. The donor is destroyed:",
+						"trans": "${item} mengambil tampilan donor ini dan mempertahankan stat miliknya. Donor tersebut dimusnahkan:"
+					},
+					"title": {
+						"eng": "Copy this look?",
+						"trans": "Tiru tampilan ini?"
+					}
+				},
+				"copyButton": {
+					"eng": "Copy look",
+					"trans": "Salin Penampilan"
+				},
+				"copyNote": {
+					"eng": "Destroys ${donor} (Lv. ${level})",
+					"trans": "Menghancurkan ${donor} (Tg. ${level})"
+				},
+				"copyNoteNoDonor": {
+					"eng": "Pick a donor of the same type to copy its look.",
+					"trans": "Pilih donor dengan tipe yang sama untuk meniru penampilannya."
+				},
+				"currentLook": {
+					"eng": "Current look",
+					"trans": "Penampilan Saat Ini"
+				},
+				"destroyed": {
+					"eng": "Destroyed",
+					"trans": "Musnah"
+				},
+				"donor": {
+					"eng": "Donor",
+					"trans": "Donasi"
+				},
+				"donorLevel": {
+					"eng": "Donor · Lv. ${level}",
+					"trans": "Donor · Lv. ${level}"
+				},
+				"donorLook": {
+					"eng": "Donor's look",
+					"trans": "Penampilan Pendonor"
+				},
+				"findScrambler": {
+					"eng": "Get a Chroma Scrambler",
+					"trans": "Dapatkan Pengacak Chroma"
+				},
+				"findScramblerNote": {
+					"eng": "You don't have any. See where they drop.",
+					"trans": "Kamu tidak punya apa pun. Cek di mana item itu muncul."
+				},
+				"gearFirst": {
+					"eng": "Choose gear first",
+					"trans": "Pilih gear dulu"
+				},
+				"getNetcoin": {
+					"eng": "Not enough netcoin",
+					"trans": "Koin Jaringan tidak cukup"
+				},
+				"level": {
+					"eng": "Lv. ${level}",
+					"trans": "Tingkat ${level}"
+				},
+				"mode": {
+					"copy": {
+						"eng": "Copy look",
+						"trans": "Salin Penampilan"
+					},
+					"scramble": {
+						"eng": "Scramble",
+						"trans": "Acak"
+					}
+				},
+				"newLook": {
+					"eng": "New look",
+					"trans": "Tampilan Baru"
+				},
+				"noDonor": {
+					"eng": "No spare ${type}",
+					"error": {
+						"eng": "No spare ${type} to copy from. The donor must be in your bag and unlocked.",
+						"trans": "Tidak ada ${type} cadangan untuk disalin. Donor harus berada di tas kamu dan sudah terbuka."
+					},
+					"sub": {
+						"eng": "Bag only, unlocked",
+						"trans": "Hanya Tas, Terbuka"
+					},
+					"trans": "Tidak ada ${type} cadangan"
+				},
+				"noItemNote": {
+					"eng": "Choose a piece of gear to start.",
+					"trans": "Pilih satu peralatan untuk memulai."
+				},
+				"pickDonor": {
+					"description": {
+						"eng": "Its look is copied, then it is destroyed.",
+						"trans": "Tampilannya disalin, lalu dihancurkan."
+					},
+					"title": {
+						"eng": "Choose a look donor",
+						"trans": "Pilih donor tampilan"
+					}
+				},
+				"pickItem": {
+					"title": {
+						"eng": "Choose gear to restyle",
+						"trans": "Pilih peralatan untuk diubah gayanya"
+					}
+				},
+				"randomLook": {
+					"eng": "Random look",
+					"sub": {
+						"eng": "Never the current one",
+						"trans": "Jangan pernah pilih yang saat ini"
+					},
+					"trans": "Penampilan acak"
+				},
+				"scrambleButton": {
+					"eng": "Scramble look",
+					"trans": "Acak Penampilan"
+				},
+				"scrambleNote": {
+					"eng": "Random result. The old look can't be restored.",
+					"trans": "Hasil acak. Tampilan lama tidak dapat dipulihkan."
+				},
+				"tagline": {
+					"eng": "Stats kept",
+					"trans": "Statistik disimpan"
+				},
+				"title": {
+					"eng": "Transmog",
+					"trans": "Transmutasi"
+				},
+				"was": {
+					"eng": "Was",
+					"trans": "Pernah"
+				},
+				"yourGear": {
+					"eng": "Your gear",
+					"trans": "Peralatanmu"
+				}
+			},
+			"description": {
+				"eng": "A neon-lit chop shop where Kessa gives your gear a new look. Scramble it at random, or copy the look of a spare item. Stats never change.",
+				"trans": "Bengkel modifikasi bercahaya neon tempat Kessa memberi peralatanmu tampilan baru. Ganti tampilannya secara acak atau salin dari item cadangan. Statistik tidak pernah berubah."
+			},
+			"greetings": {
+				"eng": [
+					"Hey, welcome in! What are we making pretty today?",
+					"Got a spare of the same kind? I can copy its look right over.",
+					"Feeling lucky? A Chroma Scrambler and a little faith, that's all it takes.",
+					"Everything in this city is skin deep. Might as well make it good skin.",
+					"Your look, your call. Nobody charges rent on it in here.",
+					"Don't mind the shoulder. It goes pink when I'm happy to see someone."
+				],
+				"trans": [
+					"Hei, silakan masuk! Apa yang akan kita percantik hari ini?",
+					"Punya cadangan sejenisnya? Aku bisa menyalin penampilannya langsung ke sana.",
+					"Merasa beruntung? Cukup dengan Pengacak Chroma dan sedikit keyakinan.",
+					"Semua di kota ini hanya sebatas kulit. Mending bikin kulit yang bagus.",
+					"Tampilanmu, pilihanmu. Di sini tidak ada yang memungut sewanya.",
+					"Jangan hiraukan bahuku. Warnanya akan berubah merah muda kalau aku senang melihat seseorang."
+				]
+			},
+			"locationName": {
+				"eng": "Skin Deep",
+				"trans": "Sekadar Permukaan"
+			},
+			"npcName": {
+				"eng": "Kessa",
+				"trans": "Kessa"
+			},
+			"popup": {
+				"copy": {
+					"done": {
+						"eng": "Look copied",
+						"trans": "Tampilan disalin."
+					},
+					"extract": {
+						"eng": "Extracting look",
+						"trans": "Mengekstrak tampilan"
+					},
+					"intro": {
+						"eng": "Mounting donor",
+						"trans": "Memasang Donor"
+					},
+					"press": {
+						"eng": "Pressing",
+						"trans": "Menekan"
+					},
+					"result": {
+						"eng": "New look · stats kept",
+						"trans": "Tampilan baru · statistik tetap"
+					},
+					"tear": {
+						"eng": "Donor destroyed",
+						"trans": "Donor hancur"
+					}
+				},
+				"done": {
+					"eng": "Done",
+					"trans": "Selesai"
+				},
+				"scramble": {
+					"insert": {
+						"eng": "Loading Chroma Scrambler",
+						"trans": "Memuat Pengacak Chroma"
+					},
+					"lock": {
+						"eng": "Locking in",
+						"trans": "Mengunci"
+					},
+					"reveal": {
+						"eng": "New look",
+						"trans": "Tampilan Baru"
+					},
+					"spin": {
+						"eng": "Scrambling look",
+						"trans": "Tampilan acak-acakan"
+					}
+				}
 			}
 		},
 		"upgradeButton": {
@@ -16595,6 +16905,10 @@
 				"eng": "Dungeon players not found",
 				"trans": "Pemain dungeon tidak ditemukan"
 			},
+			"enemyInRoom": {
+				"eng": "You cannot do that while there are enemies nearby",
+				"trans": "Kamu tidak bisa melakukan itu saat ada musuh di dekatmu."
+			},
 			"entityNotFound": {
 				"eng": "Entity not found",
 				"trans": "Entitas tidak ditemukan"
@@ -16642,6 +16956,14 @@
 			"tooHighLevel": {
 				"eng": "Your level is too high to interact with this",
 				"trans": "Level kamu terlalu tinggi untuk berinteraksi dengan ini"
+			},
+			"uplinkRelay": {
+				"eng": "${player} powered an uplink relay: +${minutes} minutes",
+				"trans": "${player} mengaktifkan relay uplink: +${minutes} menit"
+			},
+			"uplinkRelayNotEnoughHealth": {
+				"eng": "Not enough HP to power the relay",
+				"trans": "HP tidak cukup untuk mengaktifkan relay"
 			}
 		},
 		"dungeonLobby": {
@@ -19503,6 +19825,110 @@
 				"eng": "Can't upgrade a ${itemTier} item, ${shardName} can only be used with ${requiredTier} items",
 				"trans": "Item ${itemTier} tidak dapat ditingkatkan, ${shardName} hanya dapat digunakan dengan item ${requiredTier}"
 			}
+		}
+	},
+	"uplinkRelayPopup": {
+		"close": {
+			"eng": "Close",
+			"trans": "Tutup"
+		},
+		"costUnit": {
+			"eng": "max HP",
+			"trans": "HP Maksimum"
+		},
+		"engage": {
+			"eng": "Engage relay",
+			"trans": "Aktifkan Relay"
+		},
+		"flavourCost": {
+			"eng": "Every minute the party gets comes out of your health.",
+			"trans": "Setiap menit, apa pun yang diperoleh tim akan mengurangi kesehatanmu."
+		},
+		"flavourFeed": {
+			"eng": "Relay arrays feed the stronghold's shared timer.",
+			"trans": "Array relay memasok timer bersama Benteng Kuat."
+		},
+		"footerCost": {
+			"eng": "−${cost} HP",
+			"trans": "-${cost} HP"
+		},
+		"footerGain": {
+			"eng": "+${minutes} MIN",
+			"trans": "+${minutes} MENIT"
+		},
+		"health": {
+			"after": {
+				"eng": "After",
+				"trans": "Setelah"
+			},
+			"label": {
+				"eng": "Health",
+				"trans": "Kesehatan"
+			},
+			"max": {
+				"eng": "${value} max",
+				"trans": "${value} maks"
+			},
+			"now": {
+				"eng": "Now",
+				"trans": "Sekarang"
+			},
+			"short": {
+				"eng": "Short",
+				"trans": "Pendek"
+			}
+		},
+		"insufficientReason": {
+			"eng": "Relay needs ${cost} HP, you have ${health}. Heal before engaging.",
+			"trans": "Relay membutuhkan ${cost} HP, kamu memiliki ${health}. Sembuhkan diri sebelum bertempur."
+		},
+		"insufficientTitle": {
+			"eng": "Not enough health",
+			"trans": "Kesehatan tidak cukup"
+		},
+		"node": {
+			"eng": "Uplink node ${node}",
+			"trans": "Simpul uplink ${node}"
+		},
+		"offlineReason": {
+			"eng": "Another operative already routed this uplink. No HP was spent.",
+			"trans": "Agen lain telah mengalihkan uplink ini. Tidak ada HP yang terpakai."
+		},
+		"offlineStamp": {
+			"eng": "Void",
+			"trans": "Hampa"
+		},
+		"offlineTitle": {
+			"eng": "Relay offline",
+			"trans": "Relai offline"
+		},
+		"priceLabel": {
+			"eng": "Cost",
+			"trans": "Biaya"
+		},
+		"status": {
+			"offline": {
+				"eng": "Offline",
+				"trans": "Luar Jaringan"
+			},
+			"online": {
+				"eng": "Linked",
+				"trans": "Terhubung"
+			}
+		},
+		"timeUnit": {
+			"eng": "min",
+			"trans": "min"
+		},
+		"timer": {
+			"label": {
+				"eng": "Shared timer",
+				"trans": "Timer bersama"
+			}
+		},
+		"title": {
+			"eng": "Uplink relay",
+			"trans": "Relay Tautan Naik"
 		}
 	},
 	"useItemButton": {

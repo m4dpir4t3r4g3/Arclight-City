@@ -8022,6 +8022,16 @@
 				"trans": "クリスマストークン"
 			}
 		},
+		"chromaScrambler": {
+			"description": {
+				"eng": "A randomizer cartridge salvaged from BioSyn's recalled ChromaSkin stock. Scrambles one piece of equipment into a random new look. Stats stay the same.",
+				"trans": "バイオシンのリコール済みクロマスキン在庫からサルベージしたランダムライザーカートリッジ。装備1つの外装をランダムな新しいデザインに変換する。ステータスはそのまま。"
+			},
+			"name": {
+				"eng": "Chroma Scrambler",
+				"trans": "クロマスクランブラー"
+			}
+		},
 		"clanMaintenanceResource": {
 			"description": {
 				"eng": "Use to contribute to gang maintenance",
@@ -9106,22 +9116,6 @@
 				"trans": "オートリセット"
 			}
 		},
-		"item": {
-			"title": {
-				"eng": "equipment",
-				"trans": "装備"
-			}
-		},
-		"itemDiff": {
-			"headerA": {
-				"eng": "Current",
-				"trans": "現在の"
-			},
-			"headerB": {
-				"eng": "Upgraded",
-				"trans": "アップグレードされました"
-			}
-		},
 		"itemUpgradeTab": {
 			"tip": {
 				"noShards": {
@@ -9129,10 +9123,6 @@
 					"trans": "以下のアップグレードのタイプを選択してください"
 				}
 			}
-		},
-		"levelUpButton": {
-			"eng": "level up",
-			"trans": "レベルアップ"
 		},
 		"lowLevelUpgrade": {
 			"confirm": {
@@ -9180,18 +9170,6 @@
 			"title": {
 				"eng": "Select item to upgrade",
 				"trans": "アップグレードするアイテムを選択してください。"
-			}
-		},
-		"selectItemModal": {
-			"title": {
-				"eng": "Select equipment",
-				"trans": "装備を選択してください"
-			}
-		},
-		"shard": {
-			"title": {
-				"eng": "shard",
-				"trans": "シャード"
 			}
 		},
 		"tabs": {
@@ -13028,6 +13006,78 @@
 				}
 			}
 		},
+		"inductionBypass": {
+			"core": {
+				"bearing": {
+					"eng": "Bearing",
+					"trans": "方位"
+				},
+				"granted": {
+					"eng": "Access granted",
+					"trans": "アクセス許可済み"
+				},
+				"locked": {
+					"eng": "Locked",
+					"trans": "ロック済み"
+				},
+				"open": {
+					"eng": "Open",
+					"trans": "開く"
+				},
+				"rejected": {
+					"eng": "Rejected",
+					"trans": "拒否"
+				},
+				"signal": {
+					"eng": "Sig ${signal}%",
+					"trans": "シグナル${signal}%"
+				},
+				"status": {
+					"eng": "Status",
+					"trans": "状態"
+				}
+			},
+			"header": {
+				"protocol": {
+					"eng": "Maglock Intrusion IB-3",
+					"trans": "マグロック侵入 IB-3"
+				},
+				"title": {
+					"eng": "Induction Bypass",
+					"trans": "誘導バイパス"
+				}
+			},
+			"instruction": {
+				"eng": "Drag the probe. Let go when the field turns green",
+				"trans": "プローブをドラッグ。フィールドが緑になったら指を離して"
+			},
+			"status": {
+				"cold": {
+					"eng": "No field",
+					"trans": "フィールドなし"
+				},
+				"hot": {
+					"eng": "Strong — not yet",
+					"trans": "強力——まだ早い"
+				},
+				"layers": {
+					"eng": "Layers ${cracked}/${total}",
+					"trans": "レイヤー${cracked}/${total}"
+				},
+				"spot": {
+					"eng": "Locked — let go",
+					"trans": "ロック中、手を離してください"
+				},
+				"unlocked": {
+					"eng": "Access granted",
+					"trans": "アクセス許可済み"
+				},
+				"warm": {
+					"eng": "Weak field",
+					"trans": "弱いフィールド"
+				}
+			}
+		},
 		"neonFuse": {
 			"hint": {
 				"eng": "Watch and remember the sequence...",
@@ -14413,6 +14463,10 @@
 				"eng": "Shop",
 				"trans": "ショップ"
 			},
+			"transmog": {
+				"eng": "Transmog",
+				"trans": "トランスモグ"
+			},
 			"upgrade": {
 				"eng": "Upgrade",
 				"trans": "アップグレード"
@@ -14640,6 +14694,262 @@
 			"npcName": {
 				"eng": "Spectre",
 				"trans": "スペクター"
+			}
+		},
+		"transmog": {
+			"bench": {
+				"after": {
+					"eng": "After",
+					"trans": "後"
+				},
+				"applied": {
+					"eng": "Applied",
+					"sub": {
+						"eng": "Scramble again to reroll",
+						"trans": "再度スクランブルでリロールする"
+					},
+					"trans": "適用済み"
+				},
+				"before": {
+					"eng": "Before",
+					"trans": "以前"
+				},
+				"chooseDonor": {
+					"eng": "Choose a donor",
+					"sub": {
+						"eng": "Any spare ${type}",
+						"trans": "予備の${type}はありますか"
+					},
+					"trans": "ドナーを選択"
+				},
+				"chooseGear": {
+					"eng": "Choose gear",
+					"sub": {
+						"eng": "Tap the pad",
+						"trans": "パッドをタップ"
+					},
+					"trans": "ギアを選択"
+				},
+				"confirm": {
+					"description": {
+						"eng": "${item} takes this donor's look and keeps its own stats. The donor is destroyed:",
+						"trans": "${item}はこのドナーの外見を継承し、自身の属性を保持します。ドナーは破壊されます："
+					},
+					"title": {
+						"eng": "Copy this look?",
+						"trans": "このルックをコピーする？"
+					}
+				},
+				"copyButton": {
+					"eng": "Copy look",
+					"trans": "外見をコピー"
+				},
+				"copyNote": {
+					"eng": "Destroys ${donor} (Lv. ${level})",
+					"trans": "${donor}（レベル${level}）を破壊した"
+				},
+				"copyNoteNoDonor": {
+					"eng": "Pick a donor of the same type to copy its look.",
+					"trans": "同タイプのドナーを選択して見た目をコピーしてください。"
+				},
+				"currentLook": {
+					"eng": "Current look",
+					"trans": "現在の外見"
+				},
+				"destroyed": {
+					"eng": "Destroyed",
+					"trans": "破壊"
+				},
+				"donor": {
+					"eng": "Donor",
+					"trans": "ドナー"
+				},
+				"donorLevel": {
+					"eng": "Donor · Lv. ${level}",
+					"trans": "ドナー · Lv.${level}"
+				},
+				"donorLook": {
+					"eng": "Donor's look",
+					"trans": "ドナーの外見"
+				},
+				"findScrambler": {
+					"eng": "Get a Chroma Scrambler",
+					"trans": "クロマスクランブラーを手に入れる"
+				},
+				"findScramblerNote": {
+					"eng": "You don't have any. See where they drop.",
+					"trans": "まだ持っていません。ドロップ先を確認してください。"
+				},
+				"gearFirst": {
+					"eng": "Choose gear first",
+					"trans": "まず装備を選択してください"
+				},
+				"getNetcoin": {
+					"eng": "Not enough netcoin",
+					"trans": "ネットコインが不足しています"
+				},
+				"level": {
+					"eng": "Lv. ${level}",
+					"trans": "レベル${level}"
+				},
+				"mode": {
+					"copy": {
+						"eng": "Copy look",
+						"trans": "外見をコピー"
+					},
+					"scramble": {
+						"eng": "Scramble",
+						"trans": "スクランブル"
+					}
+				},
+				"newLook": {
+					"eng": "New look",
+					"trans": "ニュールック"
+				},
+				"noDonor": {
+					"eng": "No spare ${type}",
+					"error": {
+						"eng": "No spare ${type} to copy from. The donor must be in your bag and unlocked.",
+						"trans": "コピー元の予備の${type}がありません。ドナーはバッグ内にあり、ロックが解除されていなければなりません。"
+					},
+					"sub": {
+						"eng": "Bag only, unlocked",
+						"trans": "バッグのみ、解放済み"
+					},
+					"trans": "${type}の予備なし"
+				},
+				"noItemNote": {
+					"eng": "Choose a piece of gear to start.",
+					"trans": "開始する装備品を選択してください。"
+				},
+				"pickDonor": {
+					"description": {
+						"eng": "Its look is copied, then it is destroyed.",
+						"trans": "外観はコピーされ、その後破壊される。"
+					},
+					"title": {
+						"eng": "Choose a look donor",
+						"trans": "ルックドナーを選択"
+					}
+				},
+				"pickItem": {
+					"title": {
+						"eng": "Choose gear to restyle",
+						"trans": "スタイル変更対象の装備を選択"
+					}
+				},
+				"randomLook": {
+					"eng": "Random look",
+					"sub": {
+						"eng": "Never the current one",
+						"trans": "現在のものは選択しない"
+					},
+					"trans": "ランダムな見た目"
+				},
+				"scrambleButton": {
+					"eng": "Scramble look",
+					"trans": "ルックをシャッフル"
+				},
+				"scrambleNote": {
+					"eng": "Random result. The old look can't be restored.",
+					"trans": "ランダム結果。元の外見は復元できません。"
+				},
+				"tagline": {
+					"eng": "Stats kept",
+					"trans": "属性保持"
+				},
+				"title": {
+					"eng": "Transmog",
+					"trans": "トランスモグ"
+				},
+				"was": {
+					"eng": "Was",
+					"trans": "だった"
+				},
+				"yourGear": {
+					"eng": "Your gear",
+					"trans": "あなたの装備"
+				}
+			},
+			"description": {
+				"eng": "A neon-lit chop shop where Kessa gives your gear a new look. Scramble it at random, or copy the look of a spare item. Stats never change.",
+				"trans": "ネオンに照らされた改造工房で、ケッサが装備の外観を一新する。ランダムに意匠をシャッフルするか、予備アイテムの外観をコピーできる。ステータス変化なし。"
+			},
+			"greetings": {
+				"eng": [
+					"Hey, welcome in! What are we making pretty today?",
+					"Got a spare of the same kind? I can copy its look right over.",
+					"Feeling lucky? A Chroma Scrambler and a little faith, that's all it takes.",
+					"Everything in this city is skin deep. Might as well make it good skin.",
+					"Your look, your call. Nobody charges rent on it in here.",
+					"Don't mind the shoulder. It goes pink when I'm happy to see someone."
+				],
+				"trans": [
+					"やあ、ようこそ！今日はどこをきれいにしましょうか？",
+					"同じ型のスペアはある？ その見た目をそのままコピーできる。",
+					"運試しかい？ クロマスクランブラーとわずかな信仰心があれば、それで十分だ。",
+					"この街ではすべてが表皮だけの話だ。なら、上等な表皮にしよう。",
+					"外見はお前の裁量だ。ここでは見た目に料金を取る者はいない。",
+					"肩のことは気にしないで。誰かに会えて嬉しいと、ピンク色になるんだ"
+				]
+			},
+			"locationName": {
+				"eng": "Skin Deep",
+				"trans": "肌の奥"
+			},
+			"npcName": {
+				"eng": "Kessa",
+				"trans": "ケッサ"
+			},
+			"popup": {
+				"copy": {
+					"done": {
+						"eng": "Look copied",
+						"trans": "ルックをコピーしました"
+					},
+					"extract": {
+						"eng": "Extracting look",
+						"trans": "外見を抽出中"
+					},
+					"intro": {
+						"eng": "Mounting donor",
+						"trans": "ドナー装着中"
+					},
+					"press": {
+						"eng": "Pressing",
+						"trans": "押下中"
+					},
+					"result": {
+						"eng": "New look · stats kept",
+						"trans": "新しいうつわ・ステータス保持"
+					},
+					"tear": {
+						"eng": "Donor destroyed",
+						"trans": "ドナーを破壊した"
+					}
+				},
+				"done": {
+					"eng": "Done",
+					"trans": "完了"
+				},
+				"scramble": {
+					"insert": {
+						"eng": "Loading Chroma Scrambler",
+						"trans": "クロマスクランブラー読み込み中"
+					},
+					"lock": {
+						"eng": "Locking in",
+						"trans": "集中中"
+					},
+					"reveal": {
+						"eng": "New look",
+						"trans": "ニュールック"
+					},
+					"spin": {
+						"eng": "Scrambling look",
+						"trans": "スクランブル風"
+					}
+				}
 			}
 		},
 		"upgradeButton": {
@@ -16595,6 +16905,10 @@
 				"eng": "Dungeon players not found",
 				"trans": "ダンジョンのプレイヤーが見つかりません"
 			},
+			"enemyInRoom": {
+				"eng": "You cannot do that while there are enemies nearby",
+				"trans": "付近に敵がいる間は実行できません"
+			},
 			"entityNotFound": {
 				"eng": "Entity not found",
 				"trans": "対象が見つかりません"
@@ -16642,6 +16956,14 @@
 			"tooHighLevel": {
 				"eng": "Your level is too high to interact with this",
 				"trans": "このアイテムとはやり取りするには、あなたのレベルが高すぎます。"
+			},
+			"uplinkRelay": {
+				"eng": "${player} powered an uplink relay: +${minutes} minutes",
+				"trans": "${player}がアップリンク中継を稼働させました:+${minutes}分"
+			},
+			"uplinkRelayNotEnoughHealth": {
+				"eng": "Not enough HP to power the relay",
+				"trans": "リレーを稼働させるHPが不足しています"
 			}
 		},
 		"dungeonLobby": {
@@ -19503,6 +19825,110 @@
 				"eng": "Can't upgrade a ${itemTier} item, ${shardName} can only be used with ${requiredTier} items",
 				"trans": "${itemTier}のアイテムはアップグレードできません。${shardName}は${requiredTier}アイテムでのみ使用できます。"
 			}
+		}
+	},
+	"uplinkRelayPopup": {
+		"close": {
+			"eng": "Close",
+			"trans": "閉じる"
+		},
+		"costUnit": {
+			"eng": "max HP",
+			"trans": "最大HP"
+		},
+		"engage": {
+			"eng": "Engage relay",
+			"trans": "中継器を起動"
+		},
+		"flavourCost": {
+			"eng": "Every minute the party gets comes out of your health.",
+			"trans": "毎分、パーティが受け取った分はあなたの生命力から減算されます。"
+		},
+		"flavourFeed": {
+			"eng": "Relay arrays feed the stronghold's shared timer.",
+			"trans": "リレーアレイが要塞の共有タイマーを駆動している。"
+		},
+		"footerCost": {
+			"eng": "−${cost} HP",
+			"trans": "−${cost} HP"
+		},
+		"footerGain": {
+			"eng": "+${minutes} MIN",
+			"trans": "+${minutes}分"
+		},
+		"health": {
+			"after": {
+				"eng": "After",
+				"trans": "後"
+			},
+			"label": {
+				"eng": "Health",
+				"trans": "生命力"
+			},
+			"max": {
+				"eng": "${value} max",
+				"trans": "最大${value}"
+			},
+			"now": {
+				"eng": "Now",
+				"trans": "今"
+			},
+			"short": {
+				"eng": "Short",
+				"trans": "ショート"
+			}
+		},
+		"insufficientReason": {
+			"eng": "Relay needs ${cost} HP, you have ${health}. Heal before engaging.",
+			"trans": "リレーには${cost}のHPが必要です。あなたは現在${health}です。交戦前に回復せよ。"
+		},
+		"insufficientTitle": {
+			"eng": "Not enough health",
+			"trans": "生命力不足"
+		},
+		"node": {
+			"eng": "Uplink node ${node}",
+			"trans": "アップリンクノード ${node}"
+		},
+		"offlineReason": {
+			"eng": "Another operative already routed this uplink. No HP was spent.",
+			"trans": "他の作戦要員が既にこのアップリンクをルーティング済みです。HPは消費されていません。"
+		},
+		"offlineStamp": {
+			"eng": "Void",
+			"trans": "虚無"
+		},
+		"offlineTitle": {
+			"eng": "Relay offline",
+			"trans": "リレーオフライン"
+		},
+		"priceLabel": {
+			"eng": "Cost",
+			"trans": "コスト"
+		},
+		"status": {
+			"offline": {
+				"eng": "Offline",
+				"trans": "オフライン"
+			},
+			"online": {
+				"eng": "Linked",
+				"trans": "リンク済み"
+			}
+		},
+		"timeUnit": {
+			"eng": "min",
+			"trans": "分"
+		},
+		"timer": {
+			"label": {
+				"eng": "Shared timer",
+				"trans": "共有タイマー"
+			}
+		},
+		"title": {
+			"eng": "Uplink relay",
+			"trans": "アップリンク中継"
 		}
 	},
 	"useItemButton": {

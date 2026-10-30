@@ -8022,6 +8022,16 @@
 				"trans": "Token de Natal"
 			}
 		},
+		"chromaScrambler": {
+			"description": {
+				"eng": "A randomizer cartridge salvaged from BioSyn's recalled ChromaSkin stock. Scrambles one piece of equipment into a random new look. Stats stay the same.",
+				"trans": "Cartucho randomizador recuperado do estoque de ChromaSkin retirado da BioSyn. Transforma uma peça de equipamento em um novo visual aleatório. As estatísticas permanecem inalteradas."
+			},
+			"name": {
+				"eng": "Chroma Scrambler",
+				"trans": "Interferidor Cromático"
+			}
+		},
 		"clanMaintenanceResource": {
 			"description": {
 				"eng": "Use to contribute to gang maintenance",
@@ -9106,22 +9116,6 @@
 				"trans": "Reinicialização automática"
 			}
 		},
-		"item": {
-			"title": {
-				"eng": "equipment",
-				"trans": "equipamento"
-			}
-		},
-		"itemDiff": {
-			"headerA": {
-				"eng": "Current",
-				"trans": "Atual"
-			},
-			"headerB": {
-				"eng": "Upgraded",
-				"trans": "Atualizado"
-			}
-		},
 		"itemUpgradeTab": {
 			"tip": {
 				"noShards": {
@@ -9129,10 +9123,6 @@
 					"trans": "Por favor, selecione o tipo de upgrade abaixo"
 				}
 			}
-		},
-		"levelUpButton": {
-			"eng": "level up",
-			"trans": "subir de nível"
 		},
 		"lowLevelUpgrade": {
 			"confirm": {
@@ -9180,18 +9170,6 @@
 			"title": {
 				"eng": "Select item to upgrade",
 				"trans": "Selecione o item para melhorar"
-			}
-		},
-		"selectItemModal": {
-			"title": {
-				"eng": "Select equipment",
-				"trans": "Selecionar equipamento"
-			}
-		},
-		"shard": {
-			"title": {
-				"eng": "shard",
-				"trans": "fragmento"
 			}
 		},
 		"tabs": {
@@ -13028,6 +13006,78 @@
 				}
 			}
 		},
+		"inductionBypass": {
+			"core": {
+				"bearing": {
+					"eng": "Bearing",
+					"trans": "Azimute"
+				},
+				"granted": {
+					"eng": "Access granted",
+					"trans": "Acesso concedido"
+				},
+				"locked": {
+					"eng": "Locked",
+					"trans": "Bloqueado"
+				},
+				"open": {
+					"eng": "Open",
+					"trans": "Abrir"
+				},
+				"rejected": {
+					"eng": "Rejected",
+					"trans": "Rejeitado"
+				},
+				"signal": {
+					"eng": "Sig ${signal}%",
+					"trans": "Sinal ${signal}%"
+				},
+				"status": {
+					"eng": "Status",
+					"trans": "Status"
+				}
+			},
+			"header": {
+				"protocol": {
+					"eng": "Maglock Intrusion IB-3",
+					"trans": "Intrusão na Trava Magnética IB-3"
+				},
+				"title": {
+					"eng": "Induction Bypass",
+					"trans": "Bypass de Indução"
+				}
+			},
+			"instruction": {
+				"eng": "Drag the probe. Let go when the field turns green",
+				"trans": "Arraste a sonda. Solte quando o campo ficar verde."
+			},
+			"status": {
+				"cold": {
+					"eng": "No field",
+					"trans": "Sem campo"
+				},
+				"hot": {
+					"eng": "Strong — not yet",
+					"trans": "Forte — ainda não"
+				},
+				"layers": {
+					"eng": "Layers ${cracked}/${total}",
+					"trans": "Camadas ${cracked}/${total}"
+				},
+				"spot": {
+					"eng": "Locked — let go",
+					"trans": "Bloqueado — solte"
+				},
+				"unlocked": {
+					"eng": "Access granted",
+					"trans": "Acesso concedido"
+				},
+				"warm": {
+					"eng": "Weak field",
+					"trans": "Campo fraco"
+				}
+			}
+		},
 		"neonFuse": {
 			"hint": {
 				"eng": "Watch and remember the sequence...",
@@ -14413,6 +14463,10 @@
 				"eng": "Shop",
 				"trans": "Loja"
 			},
+			"transmog": {
+				"eng": "Transmog",
+				"trans": "Transmogrificação"
+			},
 			"upgrade": {
 				"eng": "Upgrade",
 				"trans": "Atualizar"
@@ -14640,6 +14694,262 @@
 			"npcName": {
 				"eng": "Spectre",
 				"trans": "Fantasma"
+			}
+		},
+		"transmog": {
+			"bench": {
+				"after": {
+					"eng": "After",
+					"trans": "Após"
+				},
+				"applied": {
+					"eng": "Applied",
+					"sub": {
+						"eng": "Scramble again to reroll",
+						"trans": "Embaralhe novamente para rolar de novo"
+					},
+					"trans": "Aplicado"
+				},
+				"before": {
+					"eng": "Before",
+					"trans": "Antes"
+				},
+				"chooseDonor": {
+					"eng": "Choose a donor",
+					"sub": {
+						"eng": "Any spare ${type}",
+						"trans": "Qualquer ${type} extra"
+					},
+					"trans": "Escolha um doador"
+				},
+				"chooseGear": {
+					"eng": "Choose gear",
+					"sub": {
+						"eng": "Tap the pad",
+						"trans": "Toque no painel"
+					},
+					"trans": "Escolher equipamento"
+				},
+				"confirm": {
+					"description": {
+						"eng": "${item} takes this donor's look and keeps its own stats. The donor is destroyed:",
+						"trans": "${item} assume a aparência deste doador e mantém suas próprias estatísticas. O doador é destruído:"
+					},
+					"title": {
+						"eng": "Copy this look?",
+						"trans": "Copie esse visual?"
+					}
+				},
+				"copyButton": {
+					"eng": "Copy look",
+					"trans": "Copiar aparência"
+				},
+				"copyNote": {
+					"eng": "Destroys ${donor} (Lv. ${level})",
+					"trans": "Destrói ${donor} (Nv. ${level})"
+				},
+				"copyNoteNoDonor": {
+					"eng": "Pick a donor of the same type to copy its look.",
+					"trans": "Selecione um doador do mesmo tipo para copiar sua aparência."
+				},
+				"currentLook": {
+					"eng": "Current look",
+					"trans": "Aparência atual"
+				},
+				"destroyed": {
+					"eng": "Destroyed",
+					"trans": "Destruído"
+				},
+				"donor": {
+					"eng": "Donor",
+					"trans": "Doador"
+				},
+				"donorLevel": {
+					"eng": "Donor · Lv. ${level}",
+					"trans": "Doador · Nv. ${level}"
+				},
+				"donorLook": {
+					"eng": "Donor's look",
+					"trans": "Aparência do doador"
+				},
+				"findScrambler": {
+					"eng": "Get a Chroma Scrambler",
+					"trans": "Obtenha um Chroma Scrambler"
+				},
+				"findScramblerNote": {
+					"eng": "You don't have any. See where they drop.",
+					"trans": "Você não tem nenhum. Veja onde eles caem."
+				},
+				"gearFirst": {
+					"eng": "Choose gear first",
+					"trans": "Escolha o equipamento primeiro"
+				},
+				"getNetcoin": {
+					"eng": "Not enough netcoin",
+					"trans": "NetCoin insuficiente"
+				},
+				"level": {
+					"eng": "Lv. ${level}",
+					"trans": "Nv. ${level}"
+				},
+				"mode": {
+					"copy": {
+						"eng": "Copy look",
+						"trans": "Copiar aparência"
+					},
+					"scramble": {
+						"eng": "Scramble",
+						"trans": "Embaralhar"
+					}
+				},
+				"newLook": {
+					"eng": "New look",
+					"trans": "Novo visual"
+				},
+				"noDonor": {
+					"eng": "No spare ${type}",
+					"error": {
+						"eng": "No spare ${type} to copy from. The donor must be in your bag and unlocked.",
+						"trans": "Sem ${type} de reserva para copiar. O doador precisa estar na sua mochila e desbloqueado."
+					},
+					"sub": {
+						"eng": "Bag only, unlocked",
+						"trans": "Somente na mochila, desbloqueado"
+					},
+					"trans": "Sem reserva de ${type}"
+				},
+				"noItemNote": {
+					"eng": "Choose a piece of gear to start.",
+					"trans": "Escolha uma peça de equipamento para começar."
+				},
+				"pickDonor": {
+					"description": {
+						"eng": "Its look is copied, then it is destroyed.",
+						"trans": "Aparência copiada e depois destruída."
+					},
+					"title": {
+						"eng": "Choose a look donor",
+						"trans": "Escolha um doador de aparência"
+					}
+				},
+				"pickItem": {
+					"title": {
+						"eng": "Choose gear to restyle",
+						"trans": "Escolha um equipamento para reestilizar"
+					}
+				},
+				"randomLook": {
+					"eng": "Random look",
+					"sub": {
+						"eng": "Never the current one",
+						"trans": "Nunca o atual"
+					},
+					"trans": "Aparência aleatória"
+				},
+				"scrambleButton": {
+					"eng": "Scramble look",
+					"trans": "Embaralhar aparência"
+				},
+				"scrambleNote": {
+					"eng": "Random result. The old look can't be restored.",
+					"trans": "Resultado aleatório. A aparência anterior não pode ser restaurada."
+				},
+				"tagline": {
+					"eng": "Stats kept",
+					"trans": "Estatísticas mantidas"
+				},
+				"title": {
+					"eng": "Transmog",
+					"trans": "Transmogrificação"
+				},
+				"was": {
+					"eng": "Was",
+					"trans": "Era"
+				},
+				"yourGear": {
+					"eng": "Your gear",
+					"trans": "Seu equipamento"
+				}
+			},
+			"description": {
+				"eng": "A neon-lit chop shop where Kessa gives your gear a new look. Scramble it at random, or copy the look of a spare item. Stats never change.",
+				"trans": "Oficina de customização iluminada por néon onde Kessa dá novo visual ao seu equipamento. Embaralhe aleatoriamente ou copie o visual de um item reserva. As estatísticas nunca mudam."
+			},
+			"greetings": {
+				"eng": [
+					"Hey, welcome in! What are we making pretty today?",
+					"Got a spare of the same kind? I can copy its look right over.",
+					"Feeling lucky? A Chroma Scrambler and a little faith, that's all it takes.",
+					"Everything in this city is skin deep. Might as well make it good skin.",
+					"Your look, your call. Nobody charges rent on it in here.",
+					"Don't mind the shoulder. It goes pink when I'm happy to see someone."
+				],
+				"trans": [
+					"Ei, bem-vindo! O que vamos deixar bonito hoje?",
+					"Tem uma peça reserva do mesmo tipo? Posso copiar o visual direto nela.",
+					"Tem sorte hoje? Um Interferidor Cromático e um pouco de fé, é só isso que basta.",
+					"Nesta cidade, tudo é só aparência. Melhor caprichar na pele.",
+					"Seu visual, sua escolha. Aqui ninguém cobra aluguel por ele.",
+					"Não repara no ombro. Ele fica rosado quando fico feliz ao ver alguém."
+				]
+			},
+			"locationName": {
+				"eng": "Skin Deep",
+				"trans": "Superficial"
+			},
+			"npcName": {
+				"eng": "Kessa",
+				"trans": "Kessa"
+			},
+			"popup": {
+				"copy": {
+					"done": {
+						"eng": "Look copied",
+						"trans": "Visual copiado"
+					},
+					"extract": {
+						"eng": "Extracting look",
+						"trans": "Extraindo aparência"
+					},
+					"intro": {
+						"eng": "Mounting donor",
+						"trans": "Montando doador"
+					},
+					"press": {
+						"eng": "Pressing",
+						"trans": "Pressionando"
+					},
+					"result": {
+						"eng": "New look · stats kept",
+						"trans": "Novo visual · estatísticas mantidas"
+					},
+					"tear": {
+						"eng": "Donor destroyed",
+						"trans": "Doador destruído"
+					}
+				},
+				"done": {
+					"eng": "Done",
+					"trans": "Concluído"
+				},
+				"scramble": {
+					"insert": {
+						"eng": "Loading Chroma Scrambler",
+						"trans": "Carregando Embaralhador Cromático"
+					},
+					"lock": {
+						"eng": "Locking in",
+						"trans": "Focando"
+					},
+					"reveal": {
+						"eng": "New look",
+						"trans": "Novo visual"
+					},
+					"spin": {
+						"eng": "Scrambling look",
+						"trans": "Visual Embaralhado"
+					}
+				}
 			}
 		},
 		"upgradeButton": {
@@ -16595,6 +16905,10 @@
 				"eng": "Dungeon players not found",
 				"trans": "Jogadores de masmorras não encontrados"
 			},
+			"enemyInRoom": {
+				"eng": "You cannot do that while there are enemies nearby",
+				"trans": "Você não pode fazer isso enquanto houver inimigos por perto"
+			},
 			"entityNotFound": {
 				"eng": "Entity not found",
 				"trans": "Entidade não encontrada"
@@ -16642,6 +16956,14 @@
 			"tooHighLevel": {
 				"eng": "Your level is too high to interact with this",
 				"trans": "Seu nível é alto demais para interagir com isso"
+			},
+			"uplinkRelay": {
+				"eng": "${player} powered an uplink relay: +${minutes} minutes",
+				"trans": "${player} alimentou um repetidor de enlace ascendente: +${minutes} minutos"
+			},
+			"uplinkRelayNotEnoughHealth": {
+				"eng": "Not enough HP to power the relay",
+				"trans": "Vida insuficiente para ativar o relé"
 			}
 		},
 		"dungeonLobby": {
@@ -19503,6 +19825,110 @@
 				"eng": "Can't upgrade a ${itemTier} item, ${shardName} can only be used with ${requiredTier} items",
 				"trans": "Não é possível atualizar um item de nível ${itemTier}, ${shardName} só pode ser usado com itens de nível ${requiredTier}"
 			}
+		}
+	},
+	"uplinkRelayPopup": {
+		"close": {
+			"eng": "Close",
+			"trans": "Fechar"
+		},
+		"costUnit": {
+			"eng": "max HP",
+			"trans": "HP máximo"
+		},
+		"engage": {
+			"eng": "Engage relay",
+			"trans": "Ativar retransmissor"
+		},
+		"flavourCost": {
+			"eng": "Every minute the party gets comes out of your health.",
+			"trans": "A cada minuto, a festa drena sua saúde."
+		},
+		"flavourFeed": {
+			"eng": "Relay arrays feed the stronghold's shared timer.",
+			"trans": "Matrizes de retransmissão alimentam o temporizador compartilhado da fortaleza."
+		},
+		"footerCost": {
+			"eng": "−${cost} HP",
+			"trans": "−${cost} HP"
+		},
+		"footerGain": {
+			"eng": "+${minutes} MIN",
+			"trans": "+${minutes} min"
+		},
+		"health": {
+			"after": {
+				"eng": "After",
+				"trans": "Após"
+			},
+			"label": {
+				"eng": "Health",
+				"trans": "Saúde"
+			},
+			"max": {
+				"eng": "${value} max",
+				"trans": "${value} máximo"
+			},
+			"now": {
+				"eng": "Now",
+				"trans": "Agora"
+			},
+			"short": {
+				"eng": "Short",
+				"trans": "Curto"
+			}
+		},
+		"insufficientReason": {
+			"eng": "Relay needs ${cost} HP, you have ${health}. Heal before engaging.",
+			"trans": "Relay precisa de ${cost} HP; você tem ${health}. Cure-se antes de entrar em combate."
+		},
+		"insufficientTitle": {
+			"eng": "Not enough health",
+			"trans": "Saúde insuficiente"
+		},
+		"node": {
+			"eng": "Uplink node ${node}",
+			"trans": "Nó de uplink ${node}"
+		},
+		"offlineReason": {
+			"eng": "Another operative already routed this uplink. No HP was spent.",
+			"trans": "Outro agente já roteou este uplink. Nenhum HP foi gasto."
+		},
+		"offlineStamp": {
+			"eng": "Void",
+			"trans": "Vazio"
+		},
+		"offlineTitle": {
+			"eng": "Relay offline",
+			"trans": "Repetidor offline"
+		},
+		"priceLabel": {
+			"eng": "Cost",
+			"trans": "Custo"
+		},
+		"status": {
+			"offline": {
+				"eng": "Offline",
+				"trans": "Desconectado"
+			},
+			"online": {
+				"eng": "Linked",
+				"trans": "Vinculado"
+			}
+		},
+		"timeUnit": {
+			"eng": "min",
+			"trans": "min"
+		},
+		"timer": {
+			"label": {
+				"eng": "Shared timer",
+				"trans": "Temporizador compartilhado"
+			}
+		},
+		"title": {
+			"eng": "Uplink relay",
+			"trans": "Retransmissor de enlace ascendente"
 		}
 	},
 	"useItemButton": {

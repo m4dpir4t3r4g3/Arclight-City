@@ -1752,6 +1752,18 @@
       "trans": "草莓千層酥",
       "match": [],
       "desc": "Crisp pastry layered with vanilla cream and strawberries."
+    },
+    {
+      "eng": "Chroma Scrambler",
+      "trans": "色域擾頻器",
+      "match": [],
+      "desc": "A randomizer cartridge salvaged from BioSyn's recalled ChromaSkin stock. Scrambles one piece of equipment into a random new look. Stats stay the same."
+    },
+    {
+      "eng": "Kessa",
+      "trans": "凱莎",
+      "match": [],
+      "desc": "One of the npc's name in the game, does not need to be direct translation from english"
     }
   ]
 }

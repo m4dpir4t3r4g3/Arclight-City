@@ -8022,6 +8022,16 @@
 				"trans": "โทเค็นคริสต์มาส"
 			}
 		},
+		"chromaScrambler": {
+			"description": {
+				"eng": "A randomizer cartridge salvaged from BioSyn's recalled ChromaSkin stock. Scrambles one piece of equipment into a random new look. Stats stay the same.",
+				"trans": "แคทริจสุ่มที่กู้ได้จากสต็อกโครมาสกินของไบโอซินที่เรียกคืน สุ่มเปลี่ยนหน้าตาอุปกรณ์หนึ่งชิ้นเป็นลุคใหม่ สเตตัสไม่เปลี่ยน"
+			},
+			"name": {
+				"eng": "Chroma Scrambler",
+				"trans": "เครื่องรบกวนสี"
+			}
+		},
 		"clanMaintenanceResource": {
 			"description": {
 				"eng": "Use to contribute to gang maintenance",
@@ -9106,22 +9116,6 @@
 				"trans": "รีเซ็ต (Auto)"
 			}
 		},
-		"item": {
-			"title": {
-				"eng": "equipment",
-				"trans": "เกียร์"
-			}
-		},
-		"itemDiff": {
-			"headerA": {
-				"eng": "Current",
-				"trans": "ปัจจุบัน"
-			},
-			"headerB": {
-				"eng": "Upgraded",
-				"trans": "อัพแล้ว"
-			}
-		},
 		"itemUpgradeTab": {
 			"tip": {
 				"noShards": {
@@ -9129,10 +9123,6 @@
 					"trans": "เลือกประเภทการอัพเกรดด้านล่าง"
 				}
 			}
-		},
-		"levelUpButton": {
-			"eng": "level up",
-			"trans": "อัพเลเวล"
 		},
 		"lowLevelUpgrade": {
 			"confirm": {
@@ -9180,18 +9170,6 @@
 			"title": {
 				"eng": "Select item to upgrade",
 				"trans": "เลือกไอเทมมาอัพเกรด"
-			}
-		},
-		"selectItemModal": {
-			"title": {
-				"eng": "Select equipment",
-				"trans": "เลือกไอเทม"
-			}
-		},
-		"shard": {
-			"title": {
-				"eng": "shard",
-				"trans": "ชาร์ด"
 			}
 		},
 		"tabs": {
@@ -13028,6 +13006,78 @@
 				}
 			}
 		},
+		"inductionBypass": {
+			"core": {
+				"bearing": {
+					"eng": "Bearing",
+					"trans": "ทิศทาง"
+				},
+				"granted": {
+					"eng": "Access granted",
+					"trans": "ได้รับสิทธิ์เข้าถึงแล้ว"
+				},
+				"locked": {
+					"eng": "Locked",
+					"trans": "ล็อก"
+				},
+				"open": {
+					"eng": "Open",
+					"trans": "เปิด"
+				},
+				"rejected": {
+					"eng": "Rejected",
+					"trans": "ถูกปฏิเสธ"
+				},
+				"signal": {
+					"eng": "Sig ${signal}%",
+					"trans": "สัญญาณ ${signal}%"
+				},
+				"status": {
+					"eng": "Status",
+					"trans": "สถานะ"
+				}
+			},
+			"header": {
+				"protocol": {
+					"eng": "Maglock Intrusion IB-3",
+					"trans": "การเจาะระบบแมกล็อก IB-3"
+				},
+				"title": {
+					"eng": "Induction Bypass",
+					"trans": "ข้ามระบบเหนี่ยวนำ"
+				}
+			},
+			"instruction": {
+				"eng": "Drag the probe. Let go when the field turns green",
+				"trans": "ลากโพรบ แล้วปล่อยเมื่อสนามเปลี่ยนเป็นสีเขียว"
+			},
+			"status": {
+				"cold": {
+					"eng": "No field",
+					"trans": "ไม่มีฟิลด์"
+				},
+				"hot": {
+					"eng": "Strong — not yet",
+					"trans": "แข็งแกร่ง — ยังไม่"
+				},
+				"layers": {
+					"eng": "Layers ${cracked}/${total}",
+					"trans": "ชั้น${cracked}/${total}"
+				},
+				"spot": {
+					"eng": "Locked — let go",
+					"trans": "ล็อกแล้ว ปล่อยมือ"
+				},
+				"unlocked": {
+					"eng": "Access granted",
+					"trans": "ได้รับสิทธิ์เข้าถึงแล้ว"
+				},
+				"warm": {
+					"eng": "Weak field",
+					"trans": "สนามอ่อน"
+				}
+			}
+		},
 		"neonFuse": {
 			"hint": {
 				"eng": "Watch and remember the sequence...",
@@ -14413,6 +14463,10 @@
 				"eng": "Shop",
 				"trans": "ร้านค้า"
 			},
+			"transmog": {
+				"eng": "Transmog",
+				"trans": "เปลี่ยนรูปลักษณ์"
+			},
 			"upgrade": {
 				"eng": "Upgrade",
 				"trans": "อัพเกรด"
@@ -14640,6 +14694,262 @@
 			"npcName": {
 				"eng": "Spectre",
 				"trans": "Spectre"
+			}
+		},
+		"transmog": {
+			"bench": {
+				"after": {
+					"eng": "After",
+					"trans": "หลัง"
+				},
+				"applied": {
+					"eng": "Applied",
+					"sub": {
+						"eng": "Scramble again to reroll",
+						"trans": "สลับอีกครั้งเพื่อสุ่มผลใหม่"
+					},
+					"trans": "ใช้แล้ว"
+				},
+				"before": {
+					"eng": "Before",
+					"trans": "ก่อน"
+				},
+				"chooseDonor": {
+					"eng": "Choose a donor",
+					"sub": {
+						"eng": "Any spare ${type}",
+						"trans": "${type} ใดๆที่เหลือ"
+					},
+					"trans": "เลือกผู้บริจาค"
+				},
+				"chooseGear": {
+					"eng": "Choose gear",
+					"sub": {
+						"eng": "Tap the pad",
+						"trans": "แตะแพด"
+					},
+					"trans": "เลือกอุปกรณ์"
+				},
+				"confirm": {
+					"description": {
+						"eng": "${item} takes this donor's look and keeps its own stats. The donor is destroyed:",
+						"trans": "${item} จะรับรูปลักษณ์จากต้นแบบนี้ และคงค่าสเตตัสของตัวเอง ต้นแบบนี้จะถูกทำลาย:"
+					},
+					"title": {
+						"eng": "Copy this look?",
+						"trans": "จะก๊อปลุคนี้นะ?"
+					}
+				},
+				"copyButton": {
+					"eng": "Copy look",
+					"trans": "คัดลอกลุค"
+				},
+				"copyNote": {
+					"eng": "Destroys ${donor} (Lv. ${level})",
+					"trans": "ทำลาย ${donor} (เลเวล ${level})"
+				},
+				"copyNoteNoDonor": {
+					"eng": "Pick a donor of the same type to copy its look.",
+					"trans": "เลือกผู้ให้ประเภทเดียวกันเพื่อคัดลอกรูปลักษณ์"
+				},
+				"currentLook": {
+					"eng": "Current look",
+					"trans": "ลุคปัจจุบัน"
+				},
+				"destroyed": {
+					"eng": "Destroyed",
+					"trans": "ถูกทำลาย"
+				},
+				"donor": {
+					"eng": "Donor",
+					"trans": "ผู้บริจาค"
+				},
+				"donorLevel": {
+					"eng": "Donor · Lv. ${level}",
+					"trans": "ผู้สนับสนุน · ระดับ ${level}"
+				},
+				"donorLook": {
+					"eng": "Donor's look",
+					"trans": "ลุคผู้บริจาค"
+				},
+				"findScrambler": {
+					"eng": "Get a Chroma Scrambler",
+					"trans": "รับเครื่องรบกวนโครมา"
+				},
+				"findScramblerNote": {
+					"eng": "You don't have any. See where they drop.",
+					"trans": "คุณไม่มีสักชิ้น ลองดูว่าดรอปตรงไหน"
+				},
+				"gearFirst": {
+					"eng": "Choose gear first",
+					"trans": "เลือกอุปกรณ์ก่อน"
+				},
+				"getNetcoin": {
+					"eng": "Not enough netcoin",
+					"trans": "ไซเบอร์บาทไม่พอ"
+				},
+				"level": {
+					"eng": "Lv. ${level}",
+					"trans": "ระดับ ${level}"
+				},
+				"mode": {
+					"copy": {
+						"eng": "Copy look",
+						"trans": "คัดลอกลุค"
+					},
+					"scramble": {
+						"eng": "Scramble",
+						"trans": "รบกวนสัญญาณ"
+					}
+				},
+				"newLook": {
+					"eng": "New look",
+					"trans": "ลุคใหม่"
+				},
+				"noDonor": {
+					"eng": "No spare ${type}",
+					"error": {
+						"eng": "No spare ${type} to copy from. The donor must be in your bag and unlocked.",
+						"trans": "ไม่มี ${type} สำรองไว้ให้คัดลอก ต้นแบบต้องอยู่ในกระเป๋าและปลดล็อกแล้ว"
+					},
+					"sub": {
+						"eng": "Bag only, unlocked",
+						"trans": "เฉพาะในกระเป๋า ปลดล็อกแล้ว"
+					},
+					"trans": "ไม่มี${type}สำรอง"
+				},
+				"noItemNote": {
+					"eng": "Choose a piece of gear to start.",
+					"trans": "เลือกอุปกรณ์สักชิ้นเพื่อเริ่มต้น"
+				},
+				"pickDonor": {
+					"description": {
+						"eng": "Its look is copied, then it is destroyed.",
+						"trans": "คัดลอกรูปลักษณ์ของมัน จากนั้นจึงทำลายทิ้ง"
+					},
+					"title": {
+						"eng": "Choose a look donor",
+						"trans": "เลือกผู้ให้รูปลักษณ์"
+					}
+				},
+				"pickItem": {
+					"title": {
+						"eng": "Choose gear to restyle",
+						"trans": "เลือกอุปกรณ์เพื่อเปลี่ยนสไตล์"
+					}
+				},
+				"randomLook": {
+					"eng": "Random look",
+					"sub": {
+						"eng": "Never the current one",
+						"trans": "ไม่ใช่ตัวเลือกปัจจุบันเสมอ"
+					},
+					"trans": "สุ่มลุค"
+				},
+				"scrambleButton": {
+					"eng": "Scramble look",
+					"trans": "เปลี่ยนลุคแบบสุ่ม"
+				},
+				"scrambleNote": {
+					"eng": "Random result. The old look can't be restored.",
+					"trans": "ผลสุ่ม ไม่สามารถกู้คืนลุคเดิมได้"
+				},
+				"tagline": {
+					"eng": "Stats kept",
+					"trans": "สเตตัสที่เก็บไว้"
+				},
+				"title": {
+					"eng": "Transmog",
+					"trans": "เปลี่ยนรูปลักษณ์"
+				},
+				"was": {
+					"eng": "Was",
+					"trans": "เคยเป็น"
+				},
+				"yourGear": {
+					"eng": "Your gear",
+					"trans": "อุปกรณ์ของคุณ"
+				}
+			},
+			"description": {
+				"eng": "A neon-lit chop shop where Kessa gives your gear a new look. Scramble it at random, or copy the look of a spare item. Stats never change.",
+				"trans": "ร้านดัดแปลงที่ส่องแสงนีออน ที่ Kessa จะเปลี่ยนลุคให้อุปกรณ์ของคุณ สุ่มเปลี่ยนใหม่หรือคัดลอกหน้าตาจากอุปกรณ์สำรอง สเตตัสไม่เปลี่ยนแปลง"
+			},
+			"greetings": {
+				"eng": [
+					"Hey, welcome in! What are we making pretty today?",
+					"Got a spare of the same kind? I can copy its look right over.",
+					"Feeling lucky? A Chroma Scrambler and a little faith, that's all it takes.",
+					"Everything in this city is skin deep. Might as well make it good skin.",
+					"Your look, your call. Nobody charges rent on it in here.",
+					"Don't mind the shoulder. It goes pink when I'm happy to see someone."
+				],
+				"trans": [
+					"หวัดดี ยินดีต้อนรับ! วันนี้เราจะทำอะไรสวยๆ บ้าง?",
+					"มีของสำรองชนิดเดียวกันไหม จะคัดลอกหน้าตาของมันมาได้เลย",
+					"อยากเสี่ยงโชค? เครื่องรบกวนสีและศรัทธาเพียงนิดเดียว แค่นั้นก็พอ",
+					"ทุกอย่างในเมืองนี้เหลือเพียงผิวภายนอก ถ้าจะให้มีแค่ผิว ก็ขอให้เป็นผิวที่ดีสักหน่อย",
+					"ลุคไหนก็เลือกเอง ที่นี่ไม่คิดค่าเช่า",
+					"อย่าสนใจไหล่ฉันเลย พอฉันดีใจที่ได้เจอใคร ไหล่ก็จะกลายเป็นสีชมพู"
+				]
+			},
+			"locationName": {
+				"eng": "Skin Deep",
+				"trans": "แค่ผิว"
+			},
+			"npcName": {
+				"eng": "Kessa",
+				"trans": "Kessa"
+			},
+			"popup": {
+				"copy": {
+					"done": {
+						"eng": "Look copied",
+						"trans": "คัดลอกลุคแล้ว"
+					},
+					"extract": {
+						"eng": "Extracting look",
+						"trans": "กำลังดึงลุคออกมา"
+					},
+					"intro": {
+						"eng": "Mounting donor",
+						"trans": "กำลังติดตั้งผู้บริจาค"
+					},
+					"press": {
+						"eng": "Pressing",
+						"trans": "กำลังกด"
+					},
+					"result": {
+						"eng": "New look · stats kept",
+						"trans": "ลุคใหม่ · สเตตัสคงเดิม"
+					},
+					"tear": {
+						"eng": "Donor destroyed",
+						"trans": "ผู้บริจาคถูกทำลาย"
+					}
+				},
+				"done": {
+					"eng": "Done",
+					"trans": "เสร็จแล้ว"
+				},
+				"scramble": {
+					"insert": {
+						"eng": "Loading Chroma Scrambler",
+						"trans": "กำลังโหลดตัวรบกวนโครมา"
+					},
+					"lock": {
+						"eng": "Locking in",
+						"trans": "ล็อกอิน"
+					},
+					"reveal": {
+						"eng": "New look",
+						"trans": "ลุคใหม่"
+					},
+					"spin": {
+						"eng": "Scrambling look",
+						"trans": "ลุคสัญญาณร่ว"
+					}
+				}
 			}
 		},
 		"upgradeButton": {
@@ -16595,6 +16905,10 @@
 				"eng": "Dungeon players not found",
 				"trans": "ไม่มีผู้เล่นในดันเจี้ยน"
 			},
+			"enemyInRoom": {
+				"eng": "You cannot do that while there are enemies nearby",
+				"trans": "คุณไม่สามารถทำเช่นนั้นได้ขณะมีศัตรูอยู่ใกล้ๆ"
+			},
 			"entityNotFound": {
 				"eng": "Entity not found",
 				"trans": "เอนทิตีไม่เจอ"
@@ -16642,6 +16956,14 @@
 			"tooHighLevel": {
 				"eng": "Your level is too high to interact with this",
 				"trans": "เลเวลของคุณสูงเกินไป ไม่สามารถโต้ตอบได้"
+			},
+			"uplinkRelay": {
+				"eng": "${player} powered an uplink relay: +${minutes} minutes",
+				"trans": "${player} เปิดใช้งานรีเลย์อัปลิงก์: +${minutes} นาที"
+			},
+			"uplinkRelayNotEnoughHealth": {
+				"eng": "Not enough HP to power the relay",
+				"trans": "HP ไม่เพียงพอต่อการจ่ายไฟให้รีเลย์"
 			}
 		},
 		"dungeonLobby": {
@@ -19503,6 +19825,110 @@
 				"eng": "Can't upgrade a ${itemTier} item, ${shardName} can only be used with ${requiredTier} items",
 				"trans": "ไอเทม ${itemTier} อัพเกรดไม่ได้, ต้องใช้ ${shardName} กับไอเทมระดับ ${requiredTier}"
 			}
+		}
+	},
+	"uplinkRelayPopup": {
+		"close": {
+			"eng": "Close",
+			"trans": "ปิด"
+		},
+		"costUnit": {
+			"eng": "max HP",
+			"trans": "HP สูงสุด"
+		},
+		"engage": {
+			"eng": "Engage relay",
+			"trans": "เปิดใช้งานรีเลย์"
+		},
+		"flavourCost": {
+			"eng": "Every minute the party gets comes out of your health.",
+			"trans": "ทุกนาทีที่ทีมได้รับความเสียหายจะถูกหักจากค่าสุขภาพของคุณ"
+		},
+		"flavourFeed": {
+			"eng": "Relay arrays feed the stronghold's shared timer.",
+			"trans": "อาร์เรย์รีเลย์ป้อนค่าให้ตัวจับเวลาร่วมของป้อมไซเบอร์"
+		},
+		"footerCost": {
+			"eng": "−${cost} HP",
+			"trans": "−${cost} HP"
+		},
+		"footerGain": {
+			"eng": "+${minutes} MIN",
+			"trans": "+${minutes} นาที"
+		},
+		"health": {
+			"after": {
+				"eng": "After",
+				"trans": "หลัง"
+			},
+			"label": {
+				"eng": "Health",
+				"trans": "HP"
+			},
+			"max": {
+				"eng": "${value} max",
+				"trans": "สูงสุด ${value}"
+			},
+			"now": {
+				"eng": "Now",
+				"trans": "ตอนนี้"
+			},
+			"short": {
+				"eng": "Short",
+				"trans": "สั้น"
+			}
+		},
+		"insufficientReason": {
+			"eng": "Relay needs ${cost} HP, you have ${health}. Heal before engaging.",
+			"trans": "Relay ต้องใช้ ${cost} HP, คุณมี ${health}. ฮีลก่อนเข้าปะทะ"
+		},
+		"insufficientTitle": {
+			"eng": "Not enough health",
+			"trans": "HP ไม่พอ"
+		},
+		"node": {
+			"eng": "Uplink node ${node}",
+			"trans": "โหนดอัปลิงก์ ${node}"
+		},
+		"offlineReason": {
+			"eng": "Another operative already routed this uplink. No HP was spent.",
+			"trans": "สายลับอีกคนกำหนดเส้นทางอัปลิงค์นี้ไปแล้ว ไม่เสีย HP"
+		},
+		"offlineStamp": {
+			"eng": "Void",
+			"trans": "สุญญตา"
+		},
+		"offlineTitle": {
+			"eng": "Relay offline",
+			"trans": "รีเลย์ออฟไลน์"
+		},
+		"priceLabel": {
+			"eng": "Cost",
+			"trans": "ค่าใช้จ่าย"
+		},
+		"status": {
+			"offline": {
+				"eng": "Offline",
+				"trans": "ออฟไลน์"
+			},
+			"online": {
+				"eng": "Linked",
+				"trans": "เชื่อมต่อแล้ว"
+			}
+		},
+		"timeUnit": {
+			"eng": "min",
+			"trans": "นาที"
+		},
+		"timer": {
+			"label": {
+				"eng": "Shared timer",
+				"trans": "ตัวจับเวลาร่วม"
+			}
+		},
+		"title": {
+			"eng": "Uplink relay",
+			"trans": "สถานีรับส่งสัญญาณขาขึ้น"
 		}
 	},
 	"useItemButton": {

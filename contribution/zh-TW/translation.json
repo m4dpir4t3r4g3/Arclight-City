@@ -8022,6 +8022,16 @@
 				"trans": "聖誕代幣"
 			}
 		},
+		"chromaScrambler": {
+			"description": {
+				"eng": "A randomizer cartridge salvaged from BioSyn's recalled ChromaSkin stock. Scrambles one piece of equipment into a random new look. Stats stay the same.",
+				"trans": "自生物科技工業召回的ChromaSkin庫存中回收的隨機化卡匣。可將一件裝備隨機換上全新外觀，屬性維持不變。"
+			},
+			"name": {
+				"eng": "Chroma Scrambler",
+				"trans": "色域擾頻器"
+			}
+		},
 		"clanMaintenanceResource": {
 			"description": {
 				"eng": "Use to contribute to gang maintenance",
@@ -9106,22 +9116,6 @@
 				"trans": "自動重置"
 			}
 		},
-		"item": {
-			"title": {
-				"eng": "equipment",
-				"trans": "裝備"
-			}
-		},
-		"itemDiff": {
-			"headerA": {
-				"eng": "Current",
-				"trans": "目前的"
-			},
-			"headerB": {
-				"eng": "Upgraded",
-				"trans": "升級完成"
-			}
-		},
 		"itemUpgradeTab": {
 			"tip": {
 				"noShards": {
@@ -9129,10 +9123,6 @@
 					"trans": "請從以下升級類型中選擇"
 				}
 			}
-		},
-		"levelUpButton": {
-			"eng": "level up",
-			"trans": "升級"
 		},
 		"lowLevelUpgrade": {
 			"confirm": {
@@ -9180,18 +9170,6 @@
 			"title": {
 				"eng": "Select item to upgrade",
 				"trans": "選擇要升級的物品"
-			}
-		},
-		"selectItemModal": {
-			"title": {
-				"eng": "Select equipment",
-				"trans": "選擇裝備"
-			}
-		},
-		"shard": {
-			"title": {
-				"eng": "shard",
-				"trans": "碎片"
 			}
 		},
 		"tabs": {
@@ -13028,6 +13006,78 @@
 				}
 			}
 		},
+		"inductionBypass": {
+			"core": {
+				"bearing": {
+					"eng": "Bearing",
+					"trans": "方位"
+				},
+				"granted": {
+					"eng": "Access granted",
+					"trans": "已授予存取權限"
+				},
+				"locked": {
+					"eng": "Locked",
+					"trans": "已鎖定"
+				},
+				"open": {
+					"eng": "Open",
+					"trans": "開啟"
+				},
+				"rejected": {
+					"eng": "Rejected",
+					"trans": "已拒絕"
+				},
+				"signal": {
+					"eng": "Sig ${signal}%",
+					"trans": "訊號${signal}%"
+				},
+				"status": {
+					"eng": "Status",
+					"trans": "狀態"
+				}
+			},
+			"header": {
+				"protocol": {
+					"eng": "Maglock Intrusion IB-3",
+					"trans": "磁鎖入侵 IB-3"
+				},
+				"title": {
+					"eng": "Induction Bypass",
+					"trans": "感應旁路"
+				}
+			},
+			"instruction": {
+				"eng": "Drag the probe. Let go when the field turns green",
+				"trans": "拖曳探針，待場域轉綠後鬆手。"
+			},
+			"status": {
+				"cold": {
+					"eng": "No field",
+					"trans": "無欄位"
+				},
+				"hot": {
+					"eng": "Strong — not yet",
+					"trans": "強—尚未"
+				},
+				"layers": {
+					"eng": "Layers ${cracked}/${total}",
+					"trans": "破損層數 ${cracked}/${total}"
+				},
+				"spot": {
+					"eng": "Locked — let go",
+					"trans": "已鎖定，請放手"
+				},
+				"unlocked": {
+					"eng": "Access granted",
+					"trans": "已授予存取權限"
+				},
+				"warm": {
+					"eng": "Weak field",
+					"trans": "微弱力場"
+				}
+			}
+		},
 		"neonFuse": {
 			"hint": {
 				"eng": "Watch and remember the sequence...",
@@ -14413,6 +14463,10 @@
 				"eng": "Shop",
 				"trans": "商店"
 			},
+			"transmog": {
+				"eng": "Transmog",
+				"trans": "幻化"
+			},
 			"upgrade": {
 				"eng": "Upgrade",
 				"trans": "升級"
@@ -14640,6 +14694,262 @@
 			"npcName": {
 				"eng": "Spectre",
 				"trans": "幽靈"
+			}
+		},
+		"transmog": {
+			"bench": {
+				"after": {
+					"eng": "After",
+					"trans": "之後"
+				},
+				"applied": {
+					"eng": "Applied",
+					"sub": {
+						"eng": "Scramble again to reroll",
+						"trans": "再次擾亂以重新抽取"
+					},
+					"trans": "已套用"
+				},
+				"before": {
+					"eng": "Before",
+					"trans": "之前"
+				},
+				"chooseDonor": {
+					"eng": "Choose a donor",
+					"sub": {
+						"eng": "Any spare ${type}",
+						"trans": "任何多餘的${type}"
+					},
+					"trans": "選擇捐贈者"
+				},
+				"chooseGear": {
+					"eng": "Choose gear",
+					"sub": {
+						"eng": "Tap the pad",
+						"trans": "輕觸面板"
+					},
+					"trans": "選擇裝備"
+				},
+				"confirm": {
+					"description": {
+						"eng": "${item} takes this donor's look and keeps its own stats. The donor is destroyed:",
+						"trans": "${item}將取得此來源物的外觀，並保留自身屬性。該來源物將被銷毀："
+					},
+					"title": {
+						"eng": "Copy this look?",
+						"trans": "複製這個造型？"
+					}
+				},
+				"copyButton": {
+					"eng": "Copy look",
+					"trans": "複製外觀"
+				},
+				"copyNote": {
+					"eng": "Destroys ${donor} (Lv. ${level})",
+					"trans": "摧毀 ${donor} (等級 ${level})"
+				},
+				"copyNoteNoDonor": {
+					"eng": "Pick a donor of the same type to copy its look.",
+					"trans": "選擇同類型的捐贈者以複製其外觀"
+				},
+				"currentLook": {
+					"eng": "Current look",
+					"trans": "目前外觀"
+				},
+				"destroyed": {
+					"eng": "Destroyed",
+					"trans": "已摧毀"
+				},
+				"donor": {
+					"eng": "Donor",
+					"trans": "捐贈者"
+				},
+				"donorLevel": {
+					"eng": "Donor · Lv. ${level}",
+					"trans": "捐贈者·等級${level}"
+				},
+				"donorLook": {
+					"eng": "Donor's look",
+					"trans": "捐贈者外觀"
+				},
+				"findScrambler": {
+					"eng": "Get a Chroma Scrambler",
+					"trans": "取得一台色域擾頻器"
+				},
+				"findScramblerNote": {
+					"eng": "You don't have any. See where they drop.",
+					"trans": "你一個都沒有。查看掉落位置。"
+				},
+				"gearFirst": {
+					"eng": "Choose gear first",
+					"trans": "先選擇裝備"
+				},
+				"getNetcoin": {
+					"eng": "Not enough netcoin",
+					"trans": "網幣不足"
+				},
+				"level": {
+					"eng": "Lv. ${level}",
+					"trans": "等級${level}"
+				},
+				"mode": {
+					"copy": {
+						"eng": "Copy look",
+						"trans": "複製外觀"
+					},
+					"scramble": {
+						"eng": "Scramble",
+						"trans": "擾亂"
+					}
+				},
+				"newLook": {
+					"eng": "New look",
+					"trans": "新外觀"
+				},
+				"noDonor": {
+					"eng": "No spare ${type}",
+					"error": {
+						"eng": "No spare ${type} to copy from. The donor must be in your bag and unlocked.",
+						"trans": "沒有可用的備用${type}可供複製。來源物品必須在背包中且已解鎖。"
+					},
+					"sub": {
+						"eng": "Bag only, unlocked",
+						"trans": "僅限背包，已解鎖"
+					},
+					"trans": "無備用${type}"
+				},
+				"noItemNote": {
+					"eng": "Choose a piece of gear to start.",
+					"trans": "選擇一件裝備以開始。"
+				},
+				"pickDonor": {
+					"description": {
+						"eng": "Its look is copied, then it is destroyed.",
+						"trans": "其外觀被複製後，本體隨即遭摧毀。"
+					},
+					"title": {
+						"eng": "Choose a look donor",
+						"trans": "選擇外觀供體"
+					}
+				},
+				"pickItem": {
+					"title": {
+						"eng": "Choose gear to restyle",
+						"trans": "選擇要重新造型的裝備"
+					}
+				},
+				"randomLook": {
+					"eng": "Random look",
+					"sub": {
+						"eng": "Never the current one",
+						"trans": "絕非目前的這個"
+					},
+					"trans": "隨機外觀"
+				},
+				"scrambleButton": {
+					"eng": "Scramble look",
+					"trans": "隨機造型"
+				},
+				"scrambleNote": {
+					"eng": "Random result. The old look can't be restored.",
+					"trans": "隨機結果。舊外觀無法還原。"
+				},
+				"tagline": {
+					"eng": "Stats kept",
+					"trans": "屬性已保留"
+				},
+				"title": {
+					"eng": "Transmog",
+					"trans": "幻化"
+				},
+				"was": {
+					"eng": "Was",
+					"trans": "是"
+				},
+				"yourGear": {
+					"eng": "Your gear",
+					"trans": "你的裝備"
+				}
+			},
+			"description": {
+				"eng": "A neon-lit chop shop where Kessa gives your gear a new look. Scramble it at random, or copy the look of a spare item. Stats never change.",
+				"trans": "一家霓虹閃爍的改裝店，凱莎會為你的裝備換上新外觀。可隨機重組外觀，或複製備用物品樣式，屬性完全不變。"
+			},
+			"greetings": {
+				"eng": [
+					"Hey, welcome in! What are we making pretty today?",
+					"Got a spare of the same kind? I can copy its look right over.",
+					"Feeling lucky? A Chroma Scrambler and a little faith, that's all it takes.",
+					"Everything in this city is skin deep. Might as well make it good skin.",
+					"Your look, your call. Nobody charges rent on it in here.",
+					"Don't mind the shoulder. It goes pink when I'm happy to see someone."
+				],
+				"trans": [
+					"嗨，歡迎光臨！今天要把什麼變漂亮？",
+					"你有同款備品嗎？我可以直接複製它的外觀。",
+					"手氣不錯嗎？一台色域擾頻器和一點信念，就夠了。",
+					"這座城市裡的一切都不過是表皮。乾脆把皮相做好吧。",
+					"造型你說了算，這裡沒人跟你收租。",
+					"別在意我的肩膀，我一見人就開心得泛紅。"
+				]
+			},
+			"locationName": {
+				"eng": "Skin Deep",
+				"trans": "皮相"
+			},
+			"npcName": {
+				"eng": "Kessa",
+				"trans": "凱莎"
+			},
+			"popup": {
+				"copy": {
+					"done": {
+						"eng": "Look copied",
+						"trans": "外觀已複製"
+					},
+					"extract": {
+						"eng": "Extracting look",
+						"trans": "正在提取外觀"
+					},
+					"intro": {
+						"eng": "Mounting donor",
+						"trans": "供體安裝中"
+					},
+					"press": {
+						"eng": "Pressing",
+						"trans": "按壓中"
+					},
+					"result": {
+						"eng": "New look · stats kept",
+						"trans": "新外觀 · 屬性不變"
+					},
+					"tear": {
+						"eng": "Donor destroyed",
+						"trans": "捐贈者已被摧毀"
+					}
+				},
+				"done": {
+					"eng": "Done",
+					"trans": "完成"
+				},
+				"scramble": {
+					"insert": {
+						"eng": "Loading Chroma Scrambler",
+						"trans": "載入色域擾頻器"
+					},
+					"lock": {
+						"eng": "Locking in",
+						"trans": "鎖定中"
+					},
+					"reveal": {
+						"eng": "New look",
+						"trans": "新外觀"
+					},
+					"spin": {
+						"eng": "Scrambling look",
+						"trans": "擾亂造型"
+					}
+				}
 			}
 		},
 		"upgradeButton": {
@@ -16595,6 +16905,10 @@
 				"eng": "Dungeon players not found",
 				"trans": "沒有找到地城玩家"
 			},
+			"enemyInRoom": {
+				"eng": "You cannot do that while there are enemies nearby",
+				"trans": "附近有敵人時，你無法這麼做。"
+			},
 			"entityNotFound": {
 				"eng": "Entity not found",
 				"trans": "找不到實體"
@@ -16642,6 +16956,14 @@
 			"tooHighLevel": {
 				"eng": "Your level is too high to interact with this",
 				"trans": "你的等級太高無法與此互動"
+			},
+			"uplinkRelay": {
+				"eng": "${player} powered an uplink relay: +${minutes} minutes",
+				"trans": "${player} 為上行中繼器供電：+${minutes}分鐘"
+			},
+			"uplinkRelayNotEnoughHealth": {
+				"eng": "Not enough HP to power the relay",
+				"trans": "HP不足以啟動中繼器"
 			}
 		},
 		"dungeonLobby": {
@@ -19503,6 +19825,110 @@
 				"eng": "Can't upgrade a ${itemTier} item, ${shardName} can only be used with ${requiredTier} items",
 				"trans": "無法升級${itemTier}物品，${shardName}只能用於${requiredTier}物品。"
 			}
+		}
+	},
+	"uplinkRelayPopup": {
+		"close": {
+			"eng": "Close",
+			"trans": "關閉"
+		},
+		"costUnit": {
+			"eng": "max HP",
+			"trans": "最大血量"
+		},
+		"engage": {
+			"eng": "Engage relay",
+			"trans": "啟動中繼"
+		},
+		"flavourCost": {
+			"eng": "Every minute the party gets comes out of your health.",
+			"trans": "每分鐘，隊伍的獲益都會從你的生命扣除。"
+		},
+		"flavourFeed": {
+			"eng": "Relay arrays feed the stronghold's shared timer.",
+			"trans": "中繼陣列為地城的共用計時器供能。"
+		},
+		"footerCost": {
+			"eng": "−${cost} HP",
+			"trans": "−${cost} 點生命值"
+		},
+		"footerGain": {
+			"eng": "+${minutes} MIN",
+			"trans": "+${minutes} 分鐘"
+		},
+		"health": {
+			"after": {
+				"eng": "After",
+				"trans": "之後"
+			},
+			"label": {
+				"eng": "Health",
+				"trans": "生命"
+			},
+			"max": {
+				"eng": "${value} max",
+				"trans": "${value} 上限"
+			},
+			"now": {
+				"eng": "Now",
+				"trans": "現在"
+			},
+			"short": {
+				"eng": "Short",
+				"trans": "短"
+			}
+		},
+		"insufficientReason": {
+			"eng": "Relay needs ${cost} HP, you have ${health}. Heal before engaging.",
+			"trans": "中繼器需要${cost}點生命，你目前有${health}。請先治療再接戰。"
+		},
+		"insufficientTitle": {
+			"eng": "Not enough health",
+			"trans": "生命不足"
+		},
+		"node": {
+			"eng": "Uplink node ${node}",
+			"trans": "上行節點${node}"
+		},
+		"offlineReason": {
+			"eng": "Another operative already routed this uplink. No HP was spent.",
+			"trans": "另一名行動員已導通此上連，未消耗HP。"
+		},
+		"offlineStamp": {
+			"eng": "Void",
+			"trans": "虛空"
+		},
+		"offlineTitle": {
+			"eng": "Relay offline",
+			"trans": "中繼離線"
+		},
+		"priceLabel": {
+			"eng": "Cost",
+			"trans": "費用"
+		},
+		"status": {
+			"offline": {
+				"eng": "Offline",
+				"trans": "離線"
+			},
+			"online": {
+				"eng": "Linked",
+				"trans": "已連結"
+			}
+		},
+		"timeUnit": {
+			"eng": "min",
+			"trans": "分"
+		},
+		"timer": {
+			"label": {
+				"eng": "Shared timer",
+				"trans": "共用計時器"
+			}
+		},
+		"title": {
+			"eng": "Uplink relay",
+			"trans": "上行中繼"
 		}
 	},
 	"useItemButton": {

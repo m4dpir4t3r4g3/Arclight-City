@@ -8022,6 +8022,16 @@
 				"trans": "Рождественский токен"
 			}
 		},
+		"chromaScrambler": {
+			"description": {
+				"eng": "A randomizer cartridge salvaged from BioSyn's recalled ChromaSkin stock. Scrambles one piece of equipment into a random new look. Stats stay the same.",
+				"trans": "Картридж-рандомизатор, добытый из отозванной партии Хромаскин компании Биосин. Превращает один предмет экипировки в случайное новое оформление. Характеристики остаются прежними."
+			},
+			"name": {
+				"eng": "Chroma Scrambler",
+				"trans": "Хромовый скремблер"
+			}
+		},
 		"clanMaintenanceResource": {
 			"description": {
 				"eng": "Use to contribute to gang maintenance",
@@ -9106,22 +9116,6 @@
 				"trans": "Автосброс"
 			}
 		},
-		"item": {
-			"title": {
-				"eng": "equipment",
-				"trans": "оборудование"
-			}
-		},
-		"itemDiff": {
-			"headerA": {
-				"eng": "Current",
-				"trans": "Текущий"
-			},
-			"headerB": {
-				"eng": "Upgraded",
-				"trans": "Улучшено"
-			}
-		},
 		"itemUpgradeTab": {
 			"tip": {
 				"noShards": {
@@ -9129,10 +9123,6 @@
 					"trans": "Пожалуйста, выберите тип улучшения ниже"
 				}
 			}
-		},
-		"levelUpButton": {
-			"eng": "level up",
-			"trans": "повысить уровень"
 		},
 		"lowLevelUpgrade": {
 			"confirm": {
@@ -9180,18 +9170,6 @@
 			"title": {
 				"eng": "Select item to upgrade",
 				"trans": "Выберите предмет для улучшения"
-			}
-		},
-		"selectItemModal": {
-			"title": {
-				"eng": "Select equipment",
-				"trans": "Выбрать оборудование"
-			}
-		},
-		"shard": {
-			"title": {
-				"eng": "shard",
-				"trans": "осколок"
 			}
 		},
 		"tabs": {
@@ -13028,6 +13006,78 @@
 				}
 			}
 		},
+		"inductionBypass": {
+			"core": {
+				"bearing": {
+					"eng": "Bearing",
+					"trans": "Подшипник"
+				},
+				"granted": {
+					"eng": "Access granted",
+					"trans": "Доступ разрешен"
+				},
+				"locked": {
+					"eng": "Locked",
+					"trans": "Заблокировано"
+				},
+				"open": {
+					"eng": "Open",
+					"trans": "Открыть"
+				},
+				"rejected": {
+					"eng": "Rejected",
+					"trans": "Отклонено"
+				},
+				"signal": {
+					"eng": "Sig ${signal}%",
+					"trans": "Сигнал ${signal}%"
+				},
+				"status": {
+					"eng": "Status",
+					"trans": "Статус"
+				}
+			},
+			"header": {
+				"protocol": {
+					"eng": "Maglock Intrusion IB-3",
+					"trans": "Взлом магнитного замка ИБ-3"
+				},
+				"title": {
+					"eng": "Induction Bypass",
+					"trans": "Обход индукции"
+				}
+			},
+			"instruction": {
+				"eng": "Drag the probe. Let go when the field turns green",
+				"trans": "Перетащите зонд. Отпустите, когда поле станет зелёным"
+			},
+			"status": {
+				"cold": {
+					"eng": "No field",
+					"trans": "Нет поля"
+				},
+				"hot": {
+					"eng": "Strong — not yet",
+					"trans": "Сильный — пока нет"
+				},
+				"layers": {
+					"eng": "Layers ${cracked}/${total}",
+					"trans": "Слои ${cracked}/${total}"
+				},
+				"spot": {
+					"eng": "Locked — let go",
+					"trans": "Заблокировано — отпустите"
+				},
+				"unlocked": {
+					"eng": "Access granted",
+					"trans": "Доступ разрешен"
+				},
+				"warm": {
+					"eng": "Weak field",
+					"trans": "Слабое поле"
+				}
+			}
+		},
 		"neonFuse": {
 			"hint": {
 				"eng": "Watch and remember the sequence...",
@@ -14413,6 +14463,10 @@
 				"eng": "Shop",
 				"trans": "Магазин"
 			},
+			"transmog": {
+				"eng": "Transmog",
+				"trans": "Трансмуг"
+			},
 			"upgrade": {
 				"eng": "Upgrade",
 				"trans": "Улучшить"
@@ -14640,6 +14694,262 @@
 			"npcName": {
 				"eng": "Spectre",
 				"trans": "Призрак"
+			}
+		},
+		"transmog": {
+			"bench": {
+				"after": {
+					"eng": "After",
+					"trans": "После"
+				},
+				"applied": {
+					"eng": "Applied",
+					"sub": {
+						"eng": "Scramble again to reroll",
+						"trans": "Перемешай ещё раз, чтобы перебросить"
+					},
+					"trans": "Применено"
+				},
+				"before": {
+					"eng": "Before",
+					"trans": "Ранее"
+				},
+				"chooseDonor": {
+					"eng": "Choose a donor",
+					"sub": {
+						"eng": "Any spare ${type}",
+						"trans": "Любой запасной ${type}"
+					},
+					"trans": "Выберите донора"
+				},
+				"chooseGear": {
+					"eng": "Choose gear",
+					"sub": {
+						"eng": "Tap the pad",
+						"trans": "Нажмите на панель"
+					},
+					"trans": "Выберите снаряжение"
+				},
+				"confirm": {
+					"description": {
+						"eng": "${item} takes this donor's look and keeps its own stats. The donor is destroyed:",
+						"trans": "${item} принимает облик этого донора и сохраняет собственные характеристики. Донор будет уничтожен:"
+					},
+					"title": {
+						"eng": "Copy this look?",
+						"trans": "Скопируешь этот образ?"
+					}
+				},
+				"copyButton": {
+					"eng": "Copy look",
+					"trans": "Скопировать внешний вид"
+				},
+				"copyNote": {
+					"eng": "Destroys ${donor} (Lv. ${level})",
+					"trans": "Уничтожает ${donor} (ур. ${level})"
+				},
+				"copyNoteNoDonor": {
+					"eng": "Pick a donor of the same type to copy its look.",
+					"trans": "Выберите донора того же типа, чтобы скопировать его облик."
+				},
+				"currentLook": {
+					"eng": "Current look",
+					"trans": "Текущий облик"
+				},
+				"destroyed": {
+					"eng": "Destroyed",
+					"trans": "Уничтожено"
+				},
+				"donor": {
+					"eng": "Donor",
+					"trans": "Донор"
+				},
+				"donorLevel": {
+					"eng": "Donor · Lv. ${level}",
+					"trans": "Донор · Ур. ${level}"
+				},
+				"donorLook": {
+					"eng": "Donor's look",
+					"trans": "Облик донора"
+				},
+				"findScrambler": {
+					"eng": "Get a Chroma Scrambler",
+					"trans": "Получить хромовый скремблер"
+				},
+				"findScramblerNote": {
+					"eng": "You don't have any. See where they drop.",
+					"trans": "У тебя их нет. Посмотри, где они выпадают."
+				},
+				"gearFirst": {
+					"eng": "Choose gear first",
+					"trans": "Сначала выберите снаряжение"
+				},
+				"getNetcoin": {
+					"eng": "Not enough netcoin",
+					"trans": "Недостаточно неткоина"
+				},
+				"level": {
+					"eng": "Lv. ${level}",
+					"trans": "Ур. ${level}"
+				},
+				"mode": {
+					"copy": {
+						"eng": "Copy look",
+						"trans": "Скопировать внешний вид"
+					},
+					"scramble": {
+						"eng": "Scramble",
+						"trans": "Зашумление"
+					}
+				},
+				"newLook": {
+					"eng": "New look",
+					"trans": "Новый образ"
+				},
+				"noDonor": {
+					"eng": "No spare ${type}",
+					"error": {
+						"eng": "No spare ${type} to copy from. The donor must be in your bag and unlocked.",
+						"trans": "Нет лишнего ${type} для копирования. Донор должен быть в вашей сумке и разблокирован."
+					},
+					"sub": {
+						"eng": "Bag only, unlocked",
+						"trans": "Только сумка, разблокировано"
+					},
+					"trans": "Нет ${type} в запасе"
+				},
+				"noItemNote": {
+					"eng": "Choose a piece of gear to start.",
+					"trans": "Выберите элемент экипировки, чтобы начать."
+				},
+				"pickDonor": {
+					"description": {
+						"eng": "Its look is copied, then it is destroyed.",
+						"trans": "Его внешний вид копируется, после чего он уничтожается."
+					},
+					"title": {
+						"eng": "Choose a look donor",
+						"trans": "Выберите донора внешности"
+					}
+				},
+				"pickItem": {
+					"title": {
+						"eng": "Choose gear to restyle",
+						"trans": "Выберите экипировку для смены стиля"
+					}
+				},
+				"randomLook": {
+					"eng": "Random look",
+					"sub": {
+						"eng": "Never the current one",
+						"trans": "Никогда не использовать текущий"
+					},
+					"trans": "Случайный облик"
+				},
+				"scrambleButton": {
+					"eng": "Scramble look",
+					"trans": "Замаскировать облик"
+				},
+				"scrambleNote": {
+					"eng": "Random result. The old look can't be restored.",
+					"trans": "Случайный результат. Прежний вид невозможно восстановить."
+				},
+				"tagline": {
+					"eng": "Stats kept",
+					"trans": "Характеристики сохранены"
+				},
+				"title": {
+					"eng": "Transmog",
+					"trans": "Трансмуг"
+				},
+				"was": {
+					"eng": "Was",
+					"trans": "было"
+				},
+				"yourGear": {
+					"eng": "Your gear",
+					"trans": "Ваше снаряжение"
+				}
+			},
+			"description": {
+				"eng": "A neon-lit chop shop where Kessa gives your gear a new look. Scramble it at random, or copy the look of a spare item. Stats never change.",
+				"trans": "Неоновый загон, где Кесса придаёт вашему снаряжению новый облик. Случайно измените его вид или скопируйте внешний вид запасного предмета. Характеристики никогда не меняются."
+			},
+			"greetings": {
+				"eng": [
+					"Hey, welcome in! What are we making pretty today?",
+					"Got a spare of the same kind? I can copy its look right over.",
+					"Feeling lucky? A Chroma Scrambler and a little faith, that's all it takes.",
+					"Everything in this city is skin deep. Might as well make it good skin.",
+					"Your look, your call. Nobody charges rent on it in here.",
+					"Don't mind the shoulder. It goes pink when I'm happy to see someone."
+				],
+				"trans": [
+					"Эй, добро пожаловать! Что сегодня будем делать красивее?",
+					"Есть запасной такой же? Могу сразу скопировать его внешний вид.",
+					"Ищешь удачу? Хромовой скремблер и немного веры, этого вполне достаточно.",
+					"Всё в этом городе поверхностно. Раз так, стоит сделать внешку получше.",
+					"Твой образ, твой выбор. Здесь за него ничего не берут.",
+					"Не обращай внимания на плечо. Оно розовеет, когда мне радостно видеть кого-нибудь."
+				]
+			},
+			"locationName": {
+				"eng": "Skin Deep",
+				"trans": "Поверхностно"
+			},
+			"npcName": {
+				"eng": "Kessa",
+				"trans": "Кесса"
+			},
+			"popup": {
+				"copy": {
+					"done": {
+						"eng": "Look copied",
+						"trans": "Облик скопирован"
+					},
+					"extract": {
+						"eng": "Extracting look",
+						"trans": "Извлечение внешнего вида"
+					},
+					"intro": {
+						"eng": "Mounting donor",
+						"trans": "Подключение донора"
+					},
+					"press": {
+						"eng": "Pressing",
+						"trans": "Нажатие"
+					},
+					"result": {
+						"eng": "New look · stats kept",
+						"trans": "Новый облик · статы сохранены"
+					},
+					"tear": {
+						"eng": "Donor destroyed",
+						"trans": "Донор уничтожен"
+					}
+				},
+				"done": {
+					"eng": "Done",
+					"trans": "Готово"
+				},
+				"scramble": {
+					"insert": {
+						"eng": "Loading Chroma Scrambler",
+						"trans": "Загрузка хромового скремблера"
+					},
+					"lock": {
+						"eng": "Locking in",
+						"trans": "Фокусировка"
+					},
+					"reveal": {
+						"eng": "New look",
+						"trans": "Новый образ"
+					},
+					"spin": {
+						"eng": "Scrambling look",
+						"trans": "Эффект глитча"
+					}
+				}
 			}
 		},
 		"upgradeButton": {
@@ -16595,6 +16905,10 @@
 				"eng": "Dungeon players not found",
 				"trans": "Игроки подземелья не найдены"
 			},
+			"enemyInRoom": {
+				"eng": "You cannot do that while there are enemies nearby",
+				"trans": "Нельзя делать это, пока рядом враги."
+			},
 			"entityNotFound": {
 				"eng": "Entity not found",
 				"trans": "Сущность не найдена"
@@ -16642,6 +16956,14 @@
 			"tooHighLevel": {
 				"eng": "Your level is too high to interact with this",
 				"trans": "Твой уровень слишком высок для взаимодействия с этим"
+			},
+			"uplinkRelay": {
+				"eng": "${player} powered an uplink relay: +${minutes} minutes",
+				"trans": "${player} активировал ретранслятор аплинка: +${minutes} мин"
+			},
+			"uplinkRelayNotEnoughHealth": {
+				"eng": "Not enough HP to power the relay",
+				"trans": "Недостаточно здоровья для питания реле"
 			}
 		},
 		"dungeonLobby": {
@@ -19503,6 +19825,110 @@
 				"eng": "Can't upgrade a ${itemTier} item, ${shardName} can only be used with ${requiredTier} items",
 				"trans": "Невозможно улучшить предмет ${itemTier} уровня, ${shardName} можно использовать только с предметами ${requiredTier} уровня"
 			}
+		}
+	},
+	"uplinkRelayPopup": {
+		"close": {
+			"eng": "Close",
+			"trans": "Закрыть"
+		},
+		"costUnit": {
+			"eng": "max HP",
+			"trans": "Максимум здоровья"
+		},
+		"engage": {
+			"eng": "Engage relay",
+			"trans": "Активировать реле"
+		},
+		"flavourCost": {
+			"eng": "Every minute the party gets comes out of your health.",
+			"trans": "Каждую минуту вечеринка вычитается из вашего здоровья."
+		},
+		"flavourFeed": {
+			"eng": "Relay arrays feed the stronghold's shared timer.",
+			"trans": "Массивы ретрансляторов питают общий таймер крепости."
+		},
+		"footerCost": {
+			"eng": "−${cost} HP",
+			"trans": "−${cost} ОЗ"
+		},
+		"footerGain": {
+			"eng": "+${minutes} MIN",
+			"trans": "+${minutes} МИН"
+		},
+		"health": {
+			"after": {
+				"eng": "After",
+				"trans": "После"
+			},
+			"label": {
+				"eng": "Health",
+				"trans": "Здоровье"
+			},
+			"max": {
+				"eng": "${value} max",
+				"trans": "${value} макс"
+			},
+			"now": {
+				"eng": "Now",
+				"trans": "Сейчас"
+			},
+			"short": {
+				"eng": "Short",
+				"trans": "Короткий"
+			}
+		},
+		"insufficientReason": {
+			"eng": "Relay needs ${cost} HP, you have ${health}. Heal before engaging.",
+			"trans": "Ретранслятору требуется ${cost} ОЗ, у вас ${health}. Исцелитесь перед боем."
+		},
+		"insufficientTitle": {
+			"eng": "Not enough health",
+			"trans": "Недостаточно здоровья"
+		},
+		"node": {
+			"eng": "Uplink node ${node}",
+			"trans": "Аплинк-узел ${node}"
+		},
+		"offlineReason": {
+			"eng": "Another operative already routed this uplink. No HP was spent.",
+			"trans": "Другой оперативник уже направил этот канал связи. ОЗ не потрачено."
+		},
+		"offlineStamp": {
+			"eng": "Void",
+			"trans": "Пустота"
+		},
+		"offlineTitle": {
+			"eng": "Relay offline",
+			"trans": "Ретранслятор офлайн"
+		},
+		"priceLabel": {
+			"eng": "Cost",
+			"trans": "Стоимость"
+		},
+		"status": {
+			"offline": {
+				"eng": "Offline",
+				"trans": "Не в сети"
+			},
+			"online": {
+				"eng": "Linked",
+				"trans": "Связан"
+			}
+		},
+		"timeUnit": {
+			"eng": "min",
+			"trans": "мин"
+		},
+		"timer": {
+			"label": {
+				"eng": "Shared timer",
+				"trans": "Общий таймер"
+			}
+		},
+		"title": {
+			"eng": "Uplink relay",
+			"trans": "Ретранслятор связи"
 		}
 	},
 	"useItemButton": {

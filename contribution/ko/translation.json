@@ -8022,6 +8022,16 @@
 				"trans": "크리스마스 토큰"
 			}
 		},
+		"chromaScrambler": {
+			"description": {
+				"eng": "A randomizer cartridge salvaged from BioSyn's recalled ChromaSkin stock. Scrambles one piece of equipment into a random new look. Stats stay the same.",
+				"trans": "바이오신의 리콜된 크로마스킨 재고에서 회수한 랜덤라이저 카트리지. 장비 1개의 외관을 무작위 새 디자인으로 변경합니다. 능력치는 그대로 유지됩니다."
+			},
+			"name": {
+				"eng": "Chroma Scrambler",
+				"trans": "크로마 스크램블러"
+			}
+		},
 		"clanMaintenanceResource": {
 			"description": {
 				"eng": "Use to contribute to gang maintenance",
@@ -9106,22 +9116,6 @@
 				"trans": "자동 재설정"
 			}
 		},
-		"item": {
-			"title": {
-				"eng": "equipment",
-				"trans": "장비"
-			}
-		},
-		"itemDiff": {
-			"headerA": {
-				"eng": "Current",
-				"trans": "현재"
-			},
-			"headerB": {
-				"eng": "Upgraded",
-				"trans": "업그레이드됨"
-			}
-		},
 		"itemUpgradeTab": {
 			"tip": {
 				"noShards": {
@@ -9129,10 +9123,6 @@
 					"trans": "아래에서 업그레이드 유형을 선택해주세요"
 				}
 			}
-		},
-		"levelUpButton": {
-			"eng": "level up",
-			"trans": "레벨 업"
 		},
 		"lowLevelUpgrade": {
 			"confirm": {
@@ -9180,18 +9170,6 @@
 			"title": {
 				"eng": "Select item to upgrade",
 				"trans": "업그레이드할 아이템을 선택하세요"
-			}
-		},
-		"selectItemModal": {
-			"title": {
-				"eng": "Select equipment",
-				"trans": "장비 선택"
-			}
-		},
-		"shard": {
-			"title": {
-				"eng": "shard",
-				"trans": "샤드"
 			}
 		},
 		"tabs": {
@@ -13028,6 +13006,78 @@
 				}
 			}
 		},
+		"inductionBypass": {
+			"core": {
+				"bearing": {
+					"eng": "Bearing",
+					"trans": "방위"
+				},
+				"granted": {
+					"eng": "Access granted",
+					"trans": "접근 허용됨"
+				},
+				"locked": {
+					"eng": "Locked",
+					"trans": "잠김"
+				},
+				"open": {
+					"eng": "Open",
+					"trans": "열기"
+				},
+				"rejected": {
+					"eng": "Rejected",
+					"trans": "거부됨"
+				},
+				"signal": {
+					"eng": "Sig ${signal}%",
+					"trans": "신호 ${signal}%"
+				},
+				"status": {
+					"eng": "Status",
+					"trans": "상태"
+				}
+			},
+			"header": {
+				"protocol": {
+					"eng": "Maglock Intrusion IB-3",
+					"trans": "자기잠금 침입 IB-3"
+				},
+				"title": {
+					"eng": "Induction Bypass",
+					"trans": "유도 우회"
+				}
+			},
+			"instruction": {
+				"eng": "Drag the probe. Let go when the field turns green",
+				"trans": "프로브를 드래그하세요. 필드가 초록색이 되면 놓으세요."
+			},
+			"status": {
+				"cold": {
+					"eng": "No field",
+					"trans": "필드 없음"
+				},
+				"hot": {
+					"eng": "Strong — not yet",
+					"trans": "강함 — 아직 아님"
+				},
+				"layers": {
+					"eng": "Layers ${cracked}/${total}",
+					"trans": "레이어 ${cracked}/${total}"
+				},
+				"spot": {
+					"eng": "Locked — let go",
+					"trans": "잠김 - 놓아 주세요"
+				},
+				"unlocked": {
+					"eng": "Access granted",
+					"trans": "접근 허용됨"
+				},
+				"warm": {
+					"eng": "Weak field",
+					"trans": "약한 필드"
+				}
+			}
+		},
 		"neonFuse": {
 			"hint": {
 				"eng": "Watch and remember the sequence...",
@@ -14413,6 +14463,10 @@
 				"eng": "Shop",
 				"trans": "상점"
 			},
+			"transmog": {
+				"eng": "Transmog",
+				"trans": "외형 변환"
+			},
 			"upgrade": {
 				"eng": "Upgrade",
 				"trans": "업그레이드"
@@ -14640,6 +14694,262 @@
 			"npcName": {
 				"eng": "Spectre",
 				"trans": "스펙트레"
+			}
+		},
+		"transmog": {
+			"bench": {
+				"after": {
+					"eng": "After",
+					"trans": "이후"
+				},
+				"applied": {
+					"eng": "Applied",
+					"sub": {
+						"eng": "Scramble again to reroll",
+						"trans": "재뽑기를 위해 다시 섞기"
+					},
+					"trans": "적용됨"
+				},
+				"before": {
+					"eng": "Before",
+					"trans": "이전"
+				},
+				"chooseDonor": {
+					"eng": "Choose a donor",
+					"sub": {
+						"eng": "Any spare ${type}",
+						"trans": "여분의 ${type}"
+					},
+					"trans": "기증자 선택"
+				},
+				"chooseGear": {
+					"eng": "Choose gear",
+					"sub": {
+						"eng": "Tap the pad",
+						"trans": "패드를 탭하세요"
+					},
+					"trans": "장비 선택"
+				},
+				"confirm": {
+					"description": {
+						"eng": "${item} takes this donor's look and keeps its own stats. The donor is destroyed:",
+						"trans": "${item} 이 도너의 외형을 취하고 자체 스탯을 유지합니다. 도너는 파괴됩니다:"
+					},
+					"title": {
+						"eng": "Copy this look?",
+						"trans": "이 룩을 복사하시겠습니까?"
+					}
+				},
+				"copyButton": {
+					"eng": "Copy look",
+					"trans": "룩 복사"
+				},
+				"copyNote": {
+					"eng": "Destroys ${donor} (Lv. ${level})",
+					"trans": "${donor}(Lv. ${level})을(를) 파괴했습니다"
+				},
+				"copyNoteNoDonor": {
+					"eng": "Pick a donor of the same type to copy its look.",
+					"trans": "같은 유형의 기증자를 선택해 외형을 복제하세요."
+				},
+				"currentLook": {
+					"eng": "Current look",
+					"trans": "현재 외형"
+				},
+				"destroyed": {
+					"eng": "Destroyed",
+					"trans": "파괴됨"
+				},
+				"donor": {
+					"eng": "Donor",
+					"trans": "공여자"
+				},
+				"donorLevel": {
+					"eng": "Donor · Lv. ${level}",
+					"trans": "기증자 · Lv. ${level}"
+				},
+				"donorLook": {
+					"eng": "Donor's look",
+					"trans": "기증자의 모습"
+				},
+				"findScrambler": {
+					"eng": "Get a Chroma Scrambler",
+					"trans": "크로마 스크램블러를 구하세요"
+				},
+				"findScramblerNote": {
+					"eng": "You don't have any. See where they drop.",
+					"trans": "보유 중인 것이 없습니다. 드롭 위치를 확인하세요."
+				},
+				"gearFirst": {
+					"eng": "Choose gear first",
+					"trans": "장비를 먼저 선택하세요."
+				},
+				"getNetcoin": {
+					"eng": "Not enough netcoin",
+					"trans": "넷코인이 부족합니다."
+				},
+				"level": {
+					"eng": "Lv. ${level}",
+					"trans": "레벨 ${level}"
+				},
+				"mode": {
+					"copy": {
+						"eng": "Copy look",
+						"trans": "룩 복사"
+					},
+					"scramble": {
+						"eng": "Scramble",
+						"trans": "스크램블"
+					}
+				},
+				"newLook": {
+					"eng": "New look",
+					"trans": "새로운 외형"
+				},
+				"noDonor": {
+					"eng": "No spare ${type}",
+					"error": {
+						"eng": "No spare ${type} to copy from. The donor must be in your bag and unlocked.",
+						"trans": "복사할 수 있는 예비 ${type}이(가) 없습니다. 원본은 가방 안에 있어야 하며 잠금이 해제된 상태여야 합니다."
+					},
+					"sub": {
+						"eng": "Bag only, unlocked",
+						"trans": "가방 전용, 잠금 해제"
+					},
+					"trans": "여분 ${type} 없음"
+				},
+				"noItemNote": {
+					"eng": "Choose a piece of gear to start.",
+					"trans": "시작할 장비를 선택하세요."
+				},
+				"pickDonor": {
+					"description": {
+						"eng": "Its look is copied, then it is destroyed.",
+						"trans": "그 외형은 복제된 뒤 파괴됩니다."
+					},
+					"title": {
+						"eng": "Choose a look donor",
+						"trans": "외모 제공자를 선택하세요"
+					}
+				},
+				"pickItem": {
+					"title": {
+						"eng": "Choose gear to restyle",
+						"trans": "리스타일할 장비를 선택하세요"
+					}
+				},
+				"randomLook": {
+					"eng": "Random look",
+					"sub": {
+						"eng": "Never the current one",
+						"trans": "현재 항목은 절대 선택 불가"
+					},
+					"trans": "랜덤 룩"
+				},
+				"scrambleButton": {
+					"eng": "Scramble look",
+					"trans": "외형 스크램블"
+				},
+				"scrambleNote": {
+					"eng": "Random result. The old look can't be restored.",
+					"trans": "무작위 결과입니다. 이전 외형은 복원할 수 없습니다."
+				},
+				"tagline": {
+					"eng": "Stats kept",
+					"trans": "수치 유지"
+				},
+				"title": {
+					"eng": "Transmog",
+					"trans": "외형 변환"
+				},
+				"was": {
+					"eng": "Was",
+					"trans": "이었다"
+				},
+				"yourGear": {
+					"eng": "Your gear",
+					"trans": "내 장비"
+				}
+			},
+			"description": {
+				"eng": "A neon-lit chop shop where Kessa gives your gear a new look. Scramble it at random, or copy the look of a spare item. Stats never change.",
+				"trans": "네온이 빛나는 케사의 개조 상점에서 장비에 새 외형을 입힙니다. 무작위로 뒤섞거나, 예비 아이템의 외형을 복사하세요. 스탯은 절대 변하지 않습니다."
+			},
+			"greetings": {
+				"eng": [
+					"Hey, welcome in! What are we making pretty today?",
+					"Got a spare of the same kind? I can copy its look right over.",
+					"Feeling lucky? A Chroma Scrambler and a little faith, that's all it takes.",
+					"Everything in this city is skin deep. Might as well make it good skin.",
+					"Your look, your call. Nobody charges rent on it in here.",
+					"Don't mind the shoulder. It goes pink when I'm happy to see someone."
+				],
+				"trans": [
+					"안녕, 어서 와! 오늘 뭘 예쁘게 만들까?",
+					"같은 종류의 여분이 있어? 외형을 그대로 복사할 수 있어.",
+					"행운을 느끼시나요? 크로마 스쿠램블러와 약간의 믿음이면 충분합니다.",
+					"이 도시에선 모든 게 겉모습일 뿐이야. 그럴 바엔 좋은 스킨이나 입는 게 낫겠지.",
+					"모습은 네 취향대로. 여기선 거기에 임대료 따위 없어.",
+					"어깨는 신경 쓰지 마. 사람을 보면 반가워서 빨개진다."
+				]
+			},
+			"locationName": {
+				"eng": "Skin Deep",
+				"trans": "겉모습뿐"
+			},
+			"npcName": {
+				"eng": "Kessa",
+				"trans": "케사"
+			},
+			"popup": {
+				"copy": {
+					"done": {
+						"eng": "Look copied",
+						"trans": "스타일이 복사되었습니다."
+					},
+					"extract": {
+						"eng": "Extracting look",
+						"trans": "외형 추출 중"
+					},
+					"intro": {
+						"eng": "Mounting donor",
+						"trans": "기증체 장착"
+					},
+					"press": {
+						"eng": "Pressing",
+						"trans": "누르는 중"
+					},
+					"result": {
+						"eng": "New look · stats kept",
+						"trans": "새로운 외형 · 수치 유지"
+					},
+					"tear": {
+						"eng": "Donor destroyed",
+						"trans": "기증자 파괴됨"
+					}
+				},
+				"done": {
+					"eng": "Done",
+					"trans": "완료"
+				},
+				"scramble": {
+					"insert": {
+						"eng": "Loading Chroma Scrambler",
+						"trans": "크로마 스크램블러 불러오는 중"
+					},
+					"lock": {
+						"eng": "Locking in",
+						"trans": "몰입 중"
+					},
+					"reveal": {
+						"eng": "New look",
+						"trans": "새로운 외형"
+					},
+					"spin": {
+						"eng": "Scrambling look",
+						"trans": "스크램블 룩"
+					}
+				}
 			}
 		},
 		"upgradeButton": {
@@ -16595,6 +16905,10 @@
 				"eng": "Dungeon players not found",
 				"trans": "던전 플레이어를 찾을 수 없습니다"
 			},
+			"enemyInRoom": {
+				"eng": "You cannot do that while there are enemies nearby",
+				"trans": "근처에 적이 있으면 그렇게 할 수 없습니다"
+			},
 			"entityNotFound": {
 				"eng": "Entity not found",
 				"trans": "엔티티를 찾을 수 없습니다"
@@ -16642,6 +16956,14 @@
 			"tooHighLevel": {
 				"eng": "Your level is too high to interact with this",
 				"trans": "이것과 상호작용하기엔 당신의 레벨이 너무 높습니다"
+			},
+			"uplinkRelay": {
+				"eng": "${player} powered an uplink relay: +${minutes} minutes",
+				"trans": "${player} 업링크 중계기 가동: +${minutes}분"
+			},
+			"uplinkRelayNotEnoughHealth": {
+				"eng": "Not enough HP to power the relay",
+				"trans": "릴레이 구동에 필요한 HP가 부족합니다"
 			}
 		},
 		"dungeonLobby": {
@@ -19503,6 +19825,110 @@
 				"eng": "Can't upgrade a ${itemTier} item, ${shardName} can only be used with ${requiredTier} items",
 				"trans": "${itemTier}아이템을 업그레이드할 수 없습니다. ${shardName}은(는) ${requiredTier}아이템에만 사용할 수 있습니다"
 			}
+		}
+	},
+	"uplinkRelayPopup": {
+		"close": {
+			"eng": "Close",
+			"trans": "닫기"
+		},
+		"costUnit": {
+			"eng": "max HP",
+			"trans": "최대 HP"
+		},
+		"engage": {
+			"eng": "Engage relay",
+			"trans": "릴레이 활성화"
+		},
+		"flavourCost": {
+			"eng": "Every minute the party gets comes out of your health.",
+			"trans": "매 분마다 파티가 얻는 만큼 체력이 차감됩니다."
+		},
+		"flavourFeed": {
+			"eng": "Relay arrays feed the stronghold's shared timer.",
+			"trans": "중계 어레이는 아지트의 공용 타이머에 데이터를 공급합니다."
+		},
+		"footerCost": {
+			"eng": "−${cost} HP",
+			"trans": "-${cost} HP"
+		},
+		"footerGain": {
+			"eng": "+${minutes} MIN",
+			"trans": "+${minutes}분"
+		},
+		"health": {
+			"after": {
+				"eng": "After",
+				"trans": "이후"
+			},
+			"label": {
+				"eng": "Health",
+				"trans": "체력"
+			},
+			"max": {
+				"eng": "${value} max",
+				"trans": "최대 ${value}"
+			},
+			"now": {
+				"eng": "Now",
+				"trans": "지금"
+			},
+			"short": {
+				"eng": "Short",
+				"trans": "짧은"
+			}
+		},
+		"insufficientReason": {
+			"eng": "Relay needs ${cost} HP, you have ${health}. Heal before engaging.",
+			"trans": "릴레이에 필요한 체력이 ${cost}입니다. 현재 체력은 ${health}입니다. 교전 전에 회복하세요."
+		},
+		"insufficientTitle": {
+			"eng": "Not enough health",
+			"trans": "체력 부족"
+		},
+		"node": {
+			"eng": "Uplink node ${node}",
+			"trans": "업링크 노드 ${node}"
+		},
+		"offlineReason": {
+			"eng": "Another operative already routed this uplink. No HP was spent.",
+			"trans": "다른 요원이 이미 이 업링크의 경로를 설정했습니다. HP는 소모되지 않았습니다."
+		},
+		"offlineStamp": {
+			"eng": "Void",
+			"trans": "공허"
+		},
+		"offlineTitle": {
+			"eng": "Relay offline",
+			"trans": "중계기 오프라인"
+		},
+		"priceLabel": {
+			"eng": "Cost",
+			"trans": "비용"
+		},
+		"status": {
+			"offline": {
+				"eng": "Offline",
+				"trans": "오프라인"
+			},
+			"online": {
+				"eng": "Linked",
+				"trans": "연결됨"
+			}
+		},
+		"timeUnit": {
+			"eng": "min",
+			"trans": "분"
+		},
+		"timer": {
+			"label": {
+				"eng": "Shared timer",
+				"trans": "공유 타이머"
+			}
+		},
+		"title": {
+			"eng": "Uplink relay",
+			"trans": "업링크 중계기"
 		}
 	},
 	"useItemButton": {

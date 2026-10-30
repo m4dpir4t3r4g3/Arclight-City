@@ -8022,6 +8022,16 @@
 				"trans": "Vánoční token"
 			}
 		},
+		"chromaScrambler": {
+			"description": {
+				"eng": "A randomizer cartridge salvaged from BioSyn's recalled ChromaSkin stock. Scrambles one piece of equipment into a random new look. Stats stay the same.",
+				"trans": "Randomizační kartridž zachráněná z vyvolaných zásob ChromaSkin od BioSyn. Zamíchá jeden kus výstroje do náhodného nového vzhledu. Statistiky zůstávají stejné."
+			},
+			"name": {
+				"eng": "Chroma Scrambler",
+				"trans": "Chromatická rušička"
+			}
+		},
 		"clanMaintenanceResource": {
 			"description": {
 				"eng": "Use to contribute to gang maintenance",
@@ -9106,22 +9116,6 @@
 				"trans": "Automatický reset"
 			}
 		},
-		"item": {
-			"title": {
-				"eng": "equipment",
-				"trans": "Vybavení"
-			}
-		},
-		"itemDiff": {
-			"headerA": {
-				"eng": "Current",
-				"trans": "Aktuální"
-			},
-			"headerB": {
-				"eng": "Upgraded",
-				"trans": "vylepšeno"
-			}
-		},
 		"itemUpgradeTab": {
 			"tip": {
 				"noShards": {
@@ -9129,10 +9123,6 @@
 					"trans": "Vyberte níže typ upgradu"
 				}
 			}
-		},
-		"levelUpButton": {
-			"eng": "level up",
-			"trans": "Vylepšit úroveň"
 		},
 		"lowLevelUpgrade": {
 			"confirm": {
@@ -9180,18 +9170,6 @@
 			"title": {
 				"eng": "Select item to upgrade",
 				"trans": "Zvolte předmět pro vylepšení"
-			}
-		},
-		"selectItemModal": {
-			"title": {
-				"eng": "Select equipment",
-				"trans": "Vybrat vybavení"
-			}
-		},
-		"shard": {
-			"title": {
-				"eng": "shard",
-				"trans": "fragment"
 			}
 		},
 		"tabs": {
@@ -13028,6 +13006,78 @@
 				}
 			}
 		},
+		"inductionBypass": {
+			"core": {
+				"bearing": {
+					"eng": "Bearing",
+					"trans": "Azimut"
+				},
+				"granted": {
+					"eng": "Access granted",
+					"trans": "Přístup udělen"
+				},
+				"locked": {
+					"eng": "Locked",
+					"trans": "Zamčeno"
+				},
+				"open": {
+					"eng": "Open",
+					"trans": "Otevřít"
+				},
+				"rejected": {
+					"eng": "Rejected",
+					"trans": "Zamítnuto"
+				},
+				"signal": {
+					"eng": "Sig ${signal}%",
+					"trans": "Signál ${signal}%"
+				},
+				"status": {
+					"eng": "Status",
+					"trans": "Stav"
+				}
+			},
+			"header": {
+				"protocol": {
+					"eng": "Maglock Intrusion IB-3",
+					"trans": "Narušení magnetického zámku IB-3"
+				},
+				"title": {
+					"eng": "Induction Bypass",
+					"trans": "Obtok indukce"
+				}
+			},
+			"instruction": {
+				"eng": "Drag the probe. Let go when the field turns green",
+				"trans": "Přesuň sondu. Uvolni, když se pole zbarví na zeleno."
+			},
+			"status": {
+				"cold": {
+					"eng": "No field",
+					"trans": "Žádné pole"
+				},
+				"hot": {
+					"eng": "Strong — not yet",
+					"trans": "Silný — zatím ne"
+				},
+				"layers": {
+					"eng": "Layers ${cracked}/${total}",
+					"trans": "Vrstvy ${cracked}/${total}"
+				},
+				"spot": {
+					"eng": "Locked — let go",
+					"trans": "Uzamčeno — pusť"
+				},
+				"unlocked": {
+					"eng": "Access granted",
+					"trans": "Přístup udělen"
+				},
+				"warm": {
+					"eng": "Weak field",
+					"trans": "Slabé pole"
+				}
+			}
+		},
 		"neonFuse": {
 			"hint": {
 				"eng": "Watch and remember the sequence...",
@@ -14413,6 +14463,10 @@
 				"eng": "Shop",
 				"trans": "Obchod"
 			},
+			"transmog": {
+				"eng": "Transmog",
+				"trans": "Transformace"
+			},
 			"upgrade": {
 				"eng": "Upgrade",
 				"trans": "vylepšení"
@@ -14640,6 +14694,262 @@
 			"npcName": {
 				"eng": "Spectre",
 				"trans": "Spectre"
+			}
+		},
+		"transmog": {
+			"bench": {
+				"after": {
+					"eng": "After",
+					"trans": "po"
+				},
+				"applied": {
+					"eng": "Applied",
+					"sub": {
+						"eng": "Scramble again to reroll",
+						"trans": "Znovu zamíchat pro nové vytažení"
+					},
+					"trans": "Použito"
+				},
+				"before": {
+					"eng": "Before",
+					"trans": "Dříve"
+				},
+				"chooseDonor": {
+					"eng": "Choose a donor",
+					"sub": {
+						"eng": "Any spare ${type}",
+						"trans": "Jakékoliv volné ${type}"
+					},
+					"trans": "Vyberte dárce"
+				},
+				"chooseGear": {
+					"eng": "Choose gear",
+					"sub": {
+						"eng": "Tap the pad",
+						"trans": "Klepni na podložku"
+					},
+					"trans": "Výběr výstroje"
+				},
+				"confirm": {
+					"description": {
+						"eng": "${item} takes this donor's look and keeps its own stats. The donor is destroyed:",
+						"trans": "${item} převzme vzhled tohoto dárce a ponechá si vlastní statistiky. Dárci se zničí:"
+					},
+					"title": {
+						"eng": "Copy this look?",
+						"trans": "Chceš si tento vzhled zopáknout?"
+					}
+				},
+				"copyButton": {
+					"eng": "Copy look",
+					"trans": "Zkopírovat vzhled"
+				},
+				"copyNote": {
+					"eng": "Destroys ${donor} (Lv. ${level})",
+					"trans": "Zničí ${donor} (úroveň ${level})"
+				},
+				"copyNoteNoDonor": {
+					"eng": "Pick a donor of the same type to copy its look.",
+					"trans": "Vyberte darce stejného typu ke zkopírování vzhledu."
+				},
+				"currentLook": {
+					"eng": "Current look",
+					"trans": "Aktuální vzhled"
+				},
+				"destroyed": {
+					"eng": "Destroyed",
+					"trans": "Zničeno"
+				},
+				"donor": {
+					"eng": "Donor",
+					"trans": "Darce"
+				},
+				"donorLevel": {
+					"eng": "Donor · Lv. ${level}",
+					"trans": "Donor · úrv. ${level}"
+				},
+				"donorLook": {
+					"eng": "Donor's look",
+					"trans": "Vzhled dárce"
+				},
+				"findScrambler": {
+					"eng": "Get a Chroma Scrambler",
+					"trans": "Získej Chromatickou Rušičku"
+				},
+				"findScramblerNote": {
+					"eng": "You don't have any. See where they drop.",
+					"trans": "Nemáš žádné. Zjisti, kde padají."
+				},
+				"gearFirst": {
+					"eng": "Choose gear first",
+					"trans": "Nejdřív si vyber výzbroj."
+				},
+				"getNetcoin": {
+					"eng": "Not enough netcoin",
+					"trans": "Nedostatek netcoinu"
+				},
+				"level": {
+					"eng": "Lv. ${level}",
+					"trans": "Úrovn. ${level}"
+				},
+				"mode": {
+					"copy": {
+						"eng": "Copy look",
+						"trans": "Zkopírovat vzhled"
+					},
+					"scramble": {
+						"eng": "Scramble",
+						"trans": "Zmatení"
+					}
+				},
+				"newLook": {
+					"eng": "New look",
+					"trans": "Nový vzhled"
+				},
+				"noDonor": {
+					"eng": "No spare ${type}",
+					"error": {
+						"eng": "No spare ${type} to copy from. The donor must be in your bag and unlocked.",
+						"trans": "Nemáš záložní ${type} ke zkopírování. Zdrojová položka musí být v tašce a odemčená."
+					},
+					"sub": {
+						"eng": "Bag only, unlocked",
+						"trans": "Pouze v batohu, odemčeno"
+					},
+					"trans": "Žádné náhradní ${type}"
+				},
+				"noItemNote": {
+					"eng": "Choose a piece of gear to start.",
+					"trans": "Vyber si kus výstroje a začni."
+				},
+				"pickDonor": {
+					"description": {
+						"eng": "Its look is copied, then it is destroyed.",
+						"trans": "Jeho vzhled se zkopíruje a poté se zničí."
+					},
+					"title": {
+						"eng": "Choose a look donor",
+						"trans": "Vyberte dárce vzhledu"
+					}
+				},
+				"pickItem": {
+					"title": {
+						"eng": "Choose gear to restyle",
+						"trans": "Vybrat vybavení ke změně vzhledu"
+					}
+				},
+				"randomLook": {
+					"eng": "Random look",
+					"sub": {
+						"eng": "Never the current one",
+						"trans": "Nikdy ne to aktuální"
+					},
+					"trans": "Náhodný vzhled"
+				},
+				"scrambleButton": {
+					"eng": "Scramble look",
+					"trans": "Náhodně změnit vzhled"
+				},
+				"scrambleNote": {
+					"eng": "Random result. The old look can't be restored.",
+					"trans": "Náhodný výsledek. Původní vzhled nelze obnovit."
+				},
+				"tagline": {
+					"eng": "Stats kept",
+					"trans": "Zachované statistiky"
+				},
+				"title": {
+					"eng": "Transmog",
+					"trans": "Transformace"
+				},
+				"was": {
+					"eng": "Was",
+					"trans": "Byl"
+				},
+				"yourGear": {
+					"eng": "Your gear",
+					"trans": "Vaše vybavení"
+				}
+			},
+			"description": {
+				"eng": "A neon-lit chop shop where Kessa gives your gear a new look. Scramble it at random, or copy the look of a spare item. Stats never change.",
+				"trans": "Neonová úpravna, kde Kessa dá tvé výstroji nový vzhled. Vzhled lze náhodně přemíchat nebo zkopírovat ze záložního předmětu. Statistiky se nikdy nemění."
+			},
+			"greetings": {
+				"eng": [
+					"Hey, welcome in! What are we making pretty today?",
+					"Got a spare of the same kind? I can copy its look right over.",
+					"Feeling lucky? A Chroma Scrambler and a little faith, that's all it takes.",
+					"Everything in this city is skin deep. Might as well make it good skin.",
+					"Your look, your call. Nobody charges rent on it in here.",
+					"Don't mind the shoulder. It goes pink when I'm happy to see someone."
+				],
+				"trans": [
+					"Hej, vítej! Co budeme dneska krášlit?",
+					"Máš náhradní kus stejného typu? Vzhled mu mohu rovnou přenést.",
+					"Hraješ na štěstí? Chromatická rušička a trocha víry, to je vše.",
+					"Všechno v tomto městě je jen povrchní. Ať je tedy aspoň dobrá kůže.",
+					"Jak vypadáš, je na tobě. Tady se za to neplatí.",
+					"Neřešte to rameno. Zbarví se na růžovo, když mě potěší vidět někoho."
+				]
+			},
+			"locationName": {
+				"eng": "Skin Deep",
+				"trans": "Povrchní"
+			},
+			"npcName": {
+				"eng": "Kessa",
+				"trans": "Kessa"
+			},
+			"popup": {
+				"copy": {
+					"done": {
+						"eng": "Look copied",
+						"trans": "Vzhled zkopírován"
+					},
+					"extract": {
+						"eng": "Extracting look",
+						"trans": "Extrahování vzhledu"
+					},
+					"intro": {
+						"eng": "Mounting donor",
+						"trans": "Montáž darce"
+					},
+					"press": {
+						"eng": "Pressing",
+						"trans": "Stisk"
+					},
+					"result": {
+						"eng": "New look · stats kept",
+						"trans": "Nový vzhled · statistiky zachovány"
+					},
+					"tear": {
+						"eng": "Donor destroyed",
+						"trans": "Dárce zničen"
+					}
+				},
+				"done": {
+					"eng": "Done",
+					"trans": "Hotovo"
+				},
+				"scramble": {
+					"insert": {
+						"eng": "Loading Chroma Scrambler",
+						"trans": "Načítání chromatické rušičky"
+					},
+					"lock": {
+						"eng": "Locking in",
+						"trans": "Uzamykání"
+					},
+					"reveal": {
+						"eng": "New look",
+						"trans": "Nový vzhled"
+					},
+					"spin": {
+						"eng": "Scrambling look",
+						"trans": "Vzhled s rušením"
+					}
+				}
 			}
 		},
 		"upgradeButton": {
@@ -16595,6 +16905,10 @@
 				"eng": "Dungeon players not found",
 				"trans": "Hráči dungeonu nenalezeni"
 			},
+			"enemyInRoom": {
+				"eng": "You cannot do that while there are enemies nearby",
+				"trans": "Toto nelze provést, pokud jsou v okolí nepřátelé."
+			},
 			"entityNotFound": {
 				"eng": "Entity not found",
 				"trans": "Entita nenalezena"
@@ -16642,6 +16956,14 @@
 			"tooHighLevel": {
 				"eng": "Your level is too high to interact with this",
 				"trans": "Úroveň je příliš vysoká pro tuto akci."
+			},
+			"uplinkRelay": {
+				"eng": "${player} powered an uplink relay: +${minutes} minutes",
+				"trans": "Uplinkové relé bylo napájeno hráčem ${player}: +${minutes} minut"
+			},
+			"uplinkRelayNotEnoughHealth": {
+				"eng": "Not enough HP to power the relay",
+				"trans": "Nedostatek životů pro napájení relé."
 			}
 		},
 		"dungeonLobby": {
@@ -19503,6 +19825,110 @@
 				"eng": "Can't upgrade a ${itemTier} item, ${shardName} can only be used with ${requiredTier} items",
 				"trans": "Nelze vylepšit předmět ${itemTier}. ${shardName} lze použít pouze s předměty ${requiredTier}."
 			}
+		}
+	},
+	"uplinkRelayPopup": {
+		"close": {
+			"eng": "Close",
+			"trans": "Zavřít"
+		},
+		"costUnit": {
+			"eng": "max HP",
+			"trans": "Maximální zdraví"
+		},
+		"engage": {
+			"eng": "Engage relay",
+			"trans": "Aktivovat relé"
+		},
+		"flavourCost": {
+			"eng": "Every minute the party gets comes out of your health.",
+			"trans": "Zisk vaší skupiny se každou minutu strhává z vašeho zdrowia."
+		},
+		"flavourFeed": {
+			"eng": "Relay arrays feed the stronghold's shared timer.",
+			"trans": "Přenosová pole napájejí společný časovač pevnosti."
+		},
+		"footerCost": {
+			"eng": "−${cost} HP",
+			"trans": "−${cost} HP"
+		},
+		"footerGain": {
+			"eng": "+${minutes} MIN",
+			"trans": "+${minutes} MIN"
+		},
+		"health": {
+			"after": {
+				"eng": "After",
+				"trans": "po"
+			},
+			"label": {
+				"eng": "Health",
+				"trans": "Zdraví"
+			},
+			"max": {
+				"eng": "${value} max",
+				"trans": "${value} max"
+			},
+			"now": {
+				"eng": "Now",
+				"trans": "Nyní"
+			},
+			"short": {
+				"eng": "Short",
+				"trans": "Krátký"
+			}
+		},
+		"insufficientReason": {
+			"eng": "Relay needs ${cost} HP, you have ${health}. Heal before engaging.",
+			"trans": "Relay potřebuje ${cost} HP, máš ${health}. Vyleč se před zapojením."
+		},
+		"insufficientTitle": {
+			"eng": "Not enough health",
+			"trans": "Nedostatek zdraví"
+		},
+		"node": {
+			"eng": "Uplink node ${node}",
+			"trans": "Uzel uplinku ${node}"
+		},
+		"offlineReason": {
+			"eng": "Another operative already routed this uplink. No HP was spent.",
+			"trans": "Jiný operátor už tento uplink prosměroval. Nebylo utraceno žádné HP."
+		},
+		"offlineStamp": {
+			"eng": "Void",
+			"trans": "Prázdnota"
+		},
+		"offlineTitle": {
+			"eng": "Relay offline",
+			"trans": "Relé mimo provoz"
+		},
+		"priceLabel": {
+			"eng": "Cost",
+			"trans": "Cena"
+		},
+		"status": {
+			"offline": {
+				"eng": "Offline",
+				"trans": "Nepřipojeno"
+			},
+			"online": {
+				"eng": "Linked",
+				"trans": "Propojeno"
+			}
+		},
+		"timeUnit": {
+			"eng": "min",
+			"trans": "min"
+		},
+		"timer": {
+			"label": {
+				"eng": "Shared timer",
+				"trans": "Sdílený časovač"
+			}
+		},
+		"title": {
+			"eng": "Uplink relay",
+			"trans": "Relé uplinku"
 		}
 	},
 	"useItemButton": {
