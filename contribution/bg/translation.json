@@ -459,7 +459,7 @@
 		"home": {
 			"active": {
 				"eng": "active",
-				"trans": "активно"
+				"trans": "активни"
 			},
 			"citizenEnforcementRegistry": {
 				"eng": "Citizen enforcement registry",
@@ -1625,7 +1625,7 @@
 			},
 			"displayName": {
 				"eng": "Rogue Asset Extraction",
-				"trans": "Прехващане на пратка"
+				"trans": "Извличане на беглия агент"
 			}
 		},
 		"scavenge": {
@@ -7989,7 +7989,7 @@
 			},
 			"name": {
 				"eng": "Elite Crate",
-				"trans": "Ключ за елитен сандък"
+				"trans": "Елитен сандък"
 			}
 		},
 		"christmasLootBox": {
@@ -8489,7 +8489,7 @@
 		"medicalTech": {
 			"description": {
 				"eng": "A piece of medical technology that can be used to craft ",
-				"trans": "Медицинска технология, която може да се използва за изработка на "
+				"trans": "Медицинска технология, която може да се използва за изработка. "
 			},
 			"name": {
 				"eng": "Medical Tech Scrap",
@@ -20382,7 +20382,7 @@
 		},
 		"leeJongSuk": {
 			"eng": "CEO Lee Jong-suk",
-			"trans": "Изпълнителен директор Ли Джонг-сук"
+			"trans": "CEO Ли Джонг-сук"
 		},
 		"liWei": {
 			"eng": "Premier Li Wei",
@@ -20430,11 +20430,11 @@
 		},
 		"robertSmith": {
 			"eng": "CEO Robert Smith",
-			"trans": "Изпълнителен директор Робърт Смит"
+			"trans": "CEO Робърт Смит"
 		},
 		"sarahGoldman": {
 			"eng": "Prime Minister-CEO Sarah Goldman",
-			"trans": "Министър-председател и изпълнителен директор Сара Голдман"
+			"trans": "Министър-председател и CEO Сара Голдман"
 		},
 		"shinkaiExchangeGroup": {
 			"eng": "SHINKAI Exchange Group",
